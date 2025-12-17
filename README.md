@@ -1,2 +1,0 @@
-# EduNova
-Learning Platfor
