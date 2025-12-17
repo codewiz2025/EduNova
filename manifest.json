@@ -1,0 +1,37 @@
+{
+  "name": "EduNova Pro",
+  "short_name": "EduNova",
+  "description": "Professional Learning Management System",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4361ee",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "https://img.icons8.com/color/96/000000/graduation-cap.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Home",
+      "description": "Go to dashboard",
+      "url": "./?dashboard"
+    },
+    {
+      "name": "Subjects",
+      "short_name": "Learn",
+      "description": "Start learning",
+      "url": "./?subjects"
+    }
+  ]
+}
