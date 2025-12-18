@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>EduNova - Professional Learning Platform</title>
+    <title>EduNova Pro - Complete Learning Platform</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <style>
@@ -45,7 +45,6 @@
             flex-direction: column;
         }
 
-        /* Update Notification */
         .update-notification {
             position: fixed;
             top: 20px;
@@ -66,20 +65,6 @@
             display: block;
         }
 
-        .update-notification h4 {
-            margin-bottom: 5px;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .update-notification p {
-            font-size: 14px;
-            opacity: 0.9;
-        }
-
-        /* Login Container */
         .login-container {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
@@ -156,7 +141,6 @@
             margin: 0 auto;
         }
 
-        /* Branch Selection */
         .branch-selection {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -202,19 +186,6 @@
             font-size: 24px;
         }
 
-        .branch-card h3 {
-            font-size: 16px;
-            margin-bottom: 5px;
-            color: var(--dark);
-            font-weight: 600;
-        }
-
-        .branch-card p {
-            font-size: 12px;
-            color: var(--gray);
-        }
-
-        /* Form Styles */
         .form-group {
             margin-bottom: 24px;
         }
@@ -250,7 +221,6 @@
             font-weight: 400;
         }
 
-        /* Professional Button */
         .btn {
             width: 100%;
             padding: 18px;
@@ -308,7 +278,10 @@
             background: linear-gradient(135deg, var(--danger), #d32f2f);
         }
 
-        /* Toggle Switch */
+        .btn-info {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+
         .toggle-switch {
             display: flex;
             align-items: center;
@@ -337,7 +310,6 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
-        /* Dashboard Styles */
         .dashboard {
             background: white;
             min-height: 100vh;
@@ -345,7 +317,6 @@
             flex-direction: column;
         }
 
-        /* Professional Navbar */
         .navbar {
             background: white;
             padding: 18px 25px;
@@ -426,12 +397,6 @@
             overflow: hidden;
         }
 
-        .user-avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
         .user-details {
             display: flex;
             flex-direction: column;
@@ -443,12 +408,6 @@
             color: var(--dark);
         }
 
-        .user-role {
-            font-size: 12px;
-            color: var(--gray);
-        }
-
-        /* Sidebar */
         .sidebar-overlay {
             position: fixed;
             top: 0;
@@ -513,12 +472,6 @@
             position: relative;
         }
 
-        .profile-avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
         .profile-avatar-upload {
             position: absolute;
             bottom: 0;
@@ -541,12 +494,6 @@
             font-weight: 600;
             margin-bottom: 5px;
             color: var(--dark);
-        }
-
-        .profile-info p {
-            font-size: 13px;
-            color: var(--gray);
-            margin-bottom: 3px;
         }
 
         .sidebar-menu {
@@ -587,7 +534,6 @@
             transform: translateX(5px);
         }
 
-        /* Main Content */
         .main-content {
             padding: 25px;
             background: #f8fafc;
@@ -614,7 +560,6 @@
             max-width: 600px;
         }
 
-        /* Stats Cards */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -665,7 +610,6 @@
             line-height: 1;
         }
 
-        /* Admin Table */
         .admin-table-container {
             background: white;
             border-radius: 16px;
@@ -702,7 +646,6 @@
             background: #f8fafc;
         }
 
-        /* Action Buttons */
         .action-buttons {
             display: flex;
             gap: 10px;
@@ -754,7 +697,6 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
-        /* Settings Page */
         .settings-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -766,14 +708,6 @@
             padding: 25px;
             border-radius: 18px;
             box-shadow: var(--card-shadow);
-        }
-
-        .settings-card h3 {
-            margin-bottom: 20px;
-            color: var(--dark);
-            display: flex;
-            align-items: center;
-            gap: 10px;
         }
 
         .profile-picture-container {
@@ -819,7 +753,6 @@
             opacity: 1;
         }
 
-        /* Reports Page */
         .reports-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -839,7 +772,6 @@
             position: relative;
         }
 
-        /* Modal Styles */
         .modal-overlay {
             position: fixed;
             top: 0;
@@ -905,7 +837,227 @@
             color: var(--dark);
         }
 
-        /* Animations */
+        /* Subject Cards */
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .subject-card {
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--hover-shadow);
+        }
+
+        .subject-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .subject-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+        }
+
+        .subject-info h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+
+        .subject-info p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .lesson-list {
+            margin-top: 20px;
+        }
+
+        .lesson-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px;
+            background: #f8fafc;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+
+        .lesson-completed {
+            color: var(--success);
+        }
+
+        .lesson-pending {
+            color: var(--gray);
+        }
+
+        /* Quiz Container */
+        .quiz-container {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: var(--card-shadow);
+            margin-top: 20px;
+        }
+
+        .quiz-question {
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: var(--dark);
+        }
+
+        .quiz-options {
+            display: grid;
+            gap: 15px;
+        }
+
+        .quiz-option {
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .quiz-option:hover {
+            background: #e9ecef;
+        }
+
+        .quiz-option.selected {
+            background: rgba(67, 97, 238, 0.1);
+            border: 2px solid var(--primary);
+        }
+
+        .quiz-option.correct {
+            background: rgba(6, 214, 160, 0.1);
+            border: 2px solid var(--success);
+        }
+
+        .quiz-option.incorrect {
+            background: rgba(230, 57, 70, 0.1);
+            border: 2px solid var(--danger);
+        }
+
+        /* Learning Content */
+        .learning-content {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: var(--card-shadow);
+            margin-top: 20px;
+        }
+
+        .content-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #f1f3f5;
+            padding-bottom: 10px;
+        }
+
+        .content-tab {
+            padding: 10px 20px;
+            background: none;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--gray);
+        }
+
+        .content-tab.active {
+            background: rgba(67, 97, 238, 0.1);
+            color: var(--primary);
+        }
+
+        /* Grades View */
+        .grades-container {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: var(--card-shadow);
+            margin-top: 20px;
+        }
+
+        .grade-card {
+            background: linear-gradient(135deg, rgba(67, 97, 238, 0.05), rgba(46, 196, 182, 0.05));
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        /* Upload Section */
+        .upload-container {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: var(--card-shadow);
+            margin-top: 20px;
+        }
+
+        .upload-area {
+            border: 2px dashed #e9ecef;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .upload-area:hover {
+            border-color: var(--primary);
+            background: rgba(67, 97, 238, 0.02);
+        }
+
+        .uploaded-files {
+            margin-top: 20px;
+        }
+
+        .file-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Animation Keyframes */
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -973,15 +1125,35 @@
             .action-buttons {
                 flex-direction: column;
             }
+            
+            .subjects-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
-        /* Utility Classes */
         .text-center { text-align: center; }
         .mb-20 { margin-bottom: 20px; }
         .mt-20 { margin-top: 20px; }
         .mb-30 { margin-bottom: 30px; }
         .mt-30 { margin-top: 30px; }
         .hidden { display: none !important; }
+        
+        /* Score Display */
+        .score-display {
+            font-size: 48px;
+            font-weight: 700;
+            text-align: center;
+            margin: 20px 0;
+            color: var(--primary);
+        }
+        
+        .score-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
@@ -992,7 +1164,7 @@
     </div>
     
     <script>
-        // Enhanced Database Structure
+        // COMPLETE DATABASE STRUCTURE
         const database = {
             admin: {
                 serialNo: "S/26/0000",
@@ -1003,8 +1175,26 @@
                 branch: "staff",
                 joinDate: "2024-01-01",
                 status: "active",
-                profilePic: null
+                profilePic: null,
+                createdBy: "system"
             },
+            
+            teachers: [
+                {
+                    serialNo: "T/26/0001",
+                    password: "teacher123",
+                    name: "Mr. Johnson Teacher",
+                    email: "teacher@edunova.com",
+                    role: "teacher",
+                    branch: "staff",
+                    joinDate: "2024-01-15",
+                    status: "active",
+                    profilePic: null,
+                    subjects: ["Mathematics", "English", "Science"],
+                    gradeLevel: ["Grade 1", "Grade 2"],
+                    createdBy: "admin"
+                }
+            ],
             
             users: [
                 {
@@ -1018,8 +1208,35 @@
                     joinDate: "2024-01-15",
                     status: "active",
                     profilePic: null,
-                    progress: {},
-                    lastActive: new Date().toISOString()
+                    progress: {
+                        mathematics: {
+                            overall: 65,
+                            lessonsCompleted: 3,
+                            totalLessons: 5,
+                            scores: [85, 90, 78, 92, 88],
+                            lastTestScore: 88,
+                            averageScore: 86.6
+                        },
+                        english: {
+                            overall: 45,
+                            lessonsCompleted: 2,
+                            totalLessons: 5,
+                            scores: [75, 82, 0, 0, 0],
+                            lastTestScore: 82,
+                            averageScore: 78.5
+                        },
+                        science: {
+                            overall: 30,
+                            lessonsCompleted: 1,
+                            totalLessons: 5,
+                            scores: [68, 0, 0, 0, 0],
+                            lastTestScore: 68,
+                            averageScore: 68
+                        }
+                    },
+                    attendance: 95,
+                    behaviorScore: 88,
+                    createdBy: "teacher"
                 }
             ],
             
@@ -1033,33 +1250,250 @@
                         color: "#4361ee",
                         icon: "fa-calculator",
                         description: "Master numbers, operations, and problem-solving skills",
+                        teacher: "Mr. Johnson Teacher",
                         lessons: [
-                            { id: 1, title: "Counting 1-100", duration: "20 min", type: "interactive", completed: false },
-                            { id: 2, title: "Basic Addition", duration: "25 min", type: "video", completed: false }
+                            { 
+                                id: 1, 
+                                title: "Counting 1-100", 
+                                duration: "20 min", 
+                                type: "interactive", 
+                                completed: true,
+                                content: "Learn to count from 1 to 100 with fun animations",
+                                quiz: [
+                                    { question: "What comes after 15?", options: ["16", "14", "20", "15"], answer: 0 },
+                                    { question: "How many tens in 30?", options: ["3", "30", "10", "0"], answer: 0 }
+                                ]
+                            },
+                            { 
+                                id: 2, 
+                                title: "Basic Addition", 
+                                duration: "25 min", 
+                                type: "video", 
+                                completed: true,
+                                content: "Learn to add numbers from 1 to 20",
+                                quiz: [
+                                    { question: "5 + 3 = ?", options: ["8", "2", "15", "53"], answer: 0 },
+                                    { question: "10 + 7 = ?", options: ["17", "3", "70", "107"], answer: 0 }
+                                ]
+                            },
+                            { 
+                                id: 3, 
+                                title: "Subtraction Basics", 
+                                duration: "30 min", 
+                                type: "interactive", 
+                                completed: true,
+                                content: "Learn to subtract numbers",
+                                quiz: [
+                                    { question: "10 - 4 = ?", options: ["6", "14", "40", "0"], answer: 0 }
+                                ]
+                            },
+                            { 
+                                id: 4, 
+                                title: "Shapes and Patterns", 
+                                duration: "35 min", 
+                                type: "game", 
+                                completed: false,
+                                content: "Identify basic shapes and create patterns"
+                            },
+                            { 
+                                id: 5, 
+                                title: "Measurement", 
+                                duration: "40 min", 
+                                type: "video", 
+                                completed: false,
+                                content: "Learn about length, weight, and volume"
+                            }
+                        ]
+                    },
+                    {
+                        id: 2,
+                        name: "English",
+                        color: "#2ec4b6",
+                        icon: "fa-book",
+                        description: "Develop reading, writing, and communication skills",
+                        teacher: "Mr. Johnson Teacher",
+                        lessons: [
+                            { 
+                                id: 1, 
+                                title: "Alphabet Recognition", 
+                                duration: "25 min", 
+                                type: "interactive", 
+                                completed: true,
+                                content: "Learn all 26 letters of the alphabet"
+                            },
+                            { 
+                                id: 2, 
+                                title: "Basic Phonics", 
+                                duration: "30 min", 
+                                type: "video", 
+                                completed: true,
+                                content: "Learn letter sounds and simple words"
+                            },
+                            { 
+                                id: 3, 
+                                title: "Simple Sentences", 
+                                duration: "35 min", 
+                                type: "interactive", 
+                                completed: false
+                            },
+                            { 
+                                id: 4, 
+                                title: "Reading Practice", 
+                                duration: "40 min", 
+                                type: "game", 
+                                completed: false
+                            },
+                            { 
+                                id: 5, 
+                                title: "Writing Basics", 
+                                duration: "45 min", 
+                                type: "video", 
+                                completed: false
+                            }
+                        ]
+                    },
+                    {
+                        id: 3,
+                        name: "Science",
+                        color: "#ff9f1c",
+                        icon: "fa-flask",
+                        description: "Explore the world through scientific inquiry",
+                        teacher: "Mr. Johnson Teacher",
+                        lessons: [
+                            { 
+                                id: 1, 
+                                title: "Living Things", 
+                                duration: "30 min", 
+                                type: "video", 
+                                completed: true,
+                                content: "Learn about plants and animals"
+                            },
+                            { 
+                                id: 2, 
+                                title: "Weather Patterns", 
+                                duration: "35 min", 
+                                type: "interactive", 
+                                completed: false
+                            },
+                            { 
+                                id: 3, 
+                                title: "Simple Machines", 
+                                duration: "40 min", 
+                                type: "game", 
+                                completed: false
+                            },
+                            { 
+                                id: 4, 
+                                title: "Our Solar System", 
+                                duration: "45 min", 
+                                type: "video", 
+                                completed: false
+                            },
+                            { 
+                                id: 5, 
+                                title: "Scientific Method", 
+                                duration: "50 min", 
+                                type: "interactive", 
+                                completed: false
+                            }
                         ]
                     }
                 ]
             },
             
+            learningMaterials: [
+                {
+                    id: 1,
+                    title: "Math Workbook PDF",
+                    subject: "Mathematics",
+                    grade: "Grade 1",
+                    type: "pdf",
+                    uploadDate: "2024-03-01",
+                    uploadedBy: "Mr. Johnson Teacher",
+                    fileSize: "2.4 MB",
+                    downloads: 45
+                },
+                {
+                    id: 2,
+                    title: "English Reading Cards",
+                    subject: "English",
+                    grade: "Grade 1",
+                    type: "image",
+                    uploadDate: "2024-03-05",
+                    uploadedBy: "Mr. Johnson Teacher",
+                    fileSize: "1.8 MB",
+                    downloads: 32
+                },
+                {
+                    id: 3,
+                    title: "Science Experiment Video",
+                    subject: "Science",
+                    grade: "Grade 1",
+                    type: "video",
+                    uploadDate: "2024-03-10",
+                    uploadedBy: "Mr. Johnson Teacher",
+                    fileSize: "15.2 MB",
+                    downloads: 28
+                }
+            ],
+            
+            assignments: [
+                {
+                    id: 1,
+                    title: "Math Homework - Addition",
+                    subject: "Mathematics",
+                    grade: "Grade 1",
+                    dueDate: "2024-03-20",
+                    assignedBy: "Mr. Johnson Teacher",
+                    submissions: [
+                        { student: "S/26/0001", submitted: true, score: 85, submittedDate: "2024-03-18" }
+                    ]
+                }
+            ],
+            
             settings: {
-                lastSerialNo: 1,
+                lastStudentNo: 1,
+                lastTeacherNo: 1,
                 academicYear: "2024",
                 approvalRequired: true,
                 appVersion: "2.0.1",
-                latestVersion: "2.1.0"
-            }
+                latestVersion: "2.1.0",
+                schoolName: "EduNova Academy",
+                principalName: "Dr. Sarah Williams"
+            },
+            
+            announcements: [
+                {
+                    id: 1,
+                    title: "Welcome to New Academic Year",
+                    content: "We welcome all students and teachers to the new academic year 2024.",
+                    date: "2024-01-10",
+                    author: "Admin"
+                },
+                {
+                    id: 2,
+                    title: "Parent-Teacher Meeting",
+                    content: "Parent-teacher meeting scheduled for March 25th, 2024.",
+                    date: "2024-03-01",
+                    author: "Admin"
+                }
+            ]
         };
 
-        // App State
+        // APP STATE
         let currentUser = null;
         let isLogin = true;
         let activeBranch = "student";
         let activeView = "dashboard";
-        let selectedGrade = "Grade 1";
         let showSidebar = false;
         let currentModal = null;
         let editingUser = null;
         let updateNotificationShown = false;
+        let selectedSubject = null;
+        let selectedLesson = null;
+        let currentQuizQuestion = 0;
+        let quizScore = 0;
+        let uploadFiles = [];
 
         // Initialize App
         function initApp() {
@@ -1069,7 +1503,6 @@
                 loadDatabase();
             }
             
-            // Check for update
             checkForUpdate();
             
             const storedUser = localStorage.getItem('edunova_user');
@@ -1081,12 +1514,11 @@
             }
         }
 
-        // Update Notification System
+        // Update Notification
         function checkForUpdate() {
             const lastUpdateCheck = localStorage.getItem('lastUpdateCheck');
             const currentTime = Date.now();
             
-            // Check once per day
             if (!lastUpdateCheck || (currentTime - lastUpdateCheck) > 24 * 60 * 60 * 1000) {
                 if (database.settings.latestVersion !== database.settings.appVersion) {
                     showUpdateNotification();
@@ -1106,7 +1538,6 @@
                 showUpdateModal();
             };
             
-            // Auto-hide after 10 seconds
             setTimeout(function() {
                 notification.classList.remove('show');
             }, 10000);
@@ -1130,16 +1561,20 @@
             }
         }
 
-        function generateSerialNo() {
-            database.settings.lastSerialNo++;
+        function generateStudentSerialNo() {
+            database.settings.lastStudentNo++;
             saveDatabase();
-            return "S/26/" + database.settings.lastSerialNo.toString().padStart(4, '0');
+            return "S/26/" + database.settings.lastStudentNo.toString().padStart(4, '0');
+        }
+
+        function generateTeacherSerialNo() {
+            database.settings.lastTeacherNo++;
+            saveDatabase();
+            return "T/26/" + database.settings.lastTeacherNo.toString().padStart(4, '0');
         }
 
         // Toast Notification System
-        function showToast(message, type) {
-            if (!type) type = "info";
-            
+        function showToast(message, type = "info") {
             const toast = document.createElement('div');
             toast.className = 'toast';
             toast.textContent = message;
@@ -1174,7 +1609,7 @@
             branchSelection += '<i class="fas fa-user-tie"></i>';
             branchSelection += '</div>';
             branchSelection += '<h3>Staff Portal</h3>';
-            branchSelection += '<p>Access staff management portal</p>';
+            branchSelection += '<p>For teachers and administrators</p>';
             branchSelection += '</div>';
             branchSelection += '<div class="branch-card ' + (activeBranch === "student" ? "active" : "") + '" onclick="setActiveBranch(\'student\')">';
             branchSelection += '<div class="branch-icon" style="background: #2ec4b6">';
@@ -1227,6 +1662,16 @@
                     loginForm += '<input type="date" class="form-control" name="dob" required>';
                     loginForm += '</div>';
                     loginForm += '<div class="form-group">';
+                    loginForm += '<label>Grade Level</label>';
+                    loginForm += '<select class="form-control" name="grade" required>';
+                    loginForm += '<option value="Grade 1">Grade 1</option>';
+                    loginForm += '<option value="Grade 2">Grade 2</option>';
+                    loginForm += '<option value="Grade 3">Grade 3</option>';
+                    loginForm += '<option value="Grade 4">Grade 4</option>';
+                    loginForm += '<option value="Grade 5">Grade 5</option>';
+                    loginForm += '</select>';
+                    loginForm += '</div>';
+                    loginForm += '<div class="form-group">';
                     loginForm += '<label>Create Password</label>';
                     loginForm += '<input type="password" class="form-control" name="password" required minlength="6">';
                     loginForm += '</div>';
@@ -1247,7 +1692,7 @@
                 '<i class="fas fa-graduation-cap"></i>' +
                 '</div>' +
                 '<h1>EduNova Pro</h1>' +
-                '<p>Professional Learning Management System</p>' +
+                '<p>Complete Learning Management System</p>' +
                 '</div>' +
                 branchSelection +
                 '<div class="toggle-switch">' +
@@ -1282,20 +1727,27 @@
             if (serialNo === database.admin.serialNo && password === database.admin.password) {
                 currentUser = database.admin;
                 localStorage.setItem('edunova_user', JSON.stringify(currentUser));
-                showToast("Welcome back, Administrator!", "success");
+                showToast("Welcome Administrator!", "success");
                 renderDashboard();
                 return;
             }
 
-            // Check users
-            const user = database.users.find(function(u) {
-                return u.serialNo === serialNo && u.password === password;
-            });
-            
-            if (user) {
-                currentUser = user;
+            // Check teachers
+            const teacher = database.teachers.find(t => t.serialNo === serialNo && t.password === password);
+            if (teacher) {
+                currentUser = teacher;
                 localStorage.setItem('edunova_user', JSON.stringify(currentUser));
-                showToast("Welcome " + currentUser.name + "!", "success");
+                showToast("Welcome " + teacher.name + "!", "success");
+                renderDashboard();
+                return;
+            }
+
+            // Check students
+            const student = database.users.find(s => s.serialNo === serialNo && s.password === password);
+            if (student) {
+                currentUser = student;
+                localStorage.setItem('edunova_user', JSON.stringify(currentUser));
+                showToast("Welcome " + student.name + "!", "success");
                 renderDashboard();
                 return;
             }
@@ -1309,6 +1761,7 @@
             const name = formData.get('name');
             const email = formData.get('email');
             const dob = formData.get('dob');
+            const grade = formData.get('grade');
             const password = formData.get('password');
             const confirmPassword = formData.get('confirmPassword');
 
@@ -1318,9 +1771,9 @@
             }
 
             // Check if email exists
-            const emailExists = database.users.some(function(u) {
-                return u.email === email;
-            });
+            const emailExists = database.users.some(u => u.email === email) || 
+                               database.teachers.some(t => t.email === email) ||
+                               database.admin.email === email;
             
             if (emailExists) {
                 showToast("Email already registered", "error");
@@ -1332,11 +1785,17 @@
                 name: name,
                 email: email,
                 dob: dob,
+                grade: grade,
                 password: password,
                 role: "student",
                 branch: "student",
                 requestedDate: new Date().toISOString(),
-                status: "pending"
+                status: "pending",
+                progress: {
+                    mathematics: { overall: 0, lessonsCompleted: 0, totalLessons: 5, scores: [], lastTestScore: 0, averageScore: 0 },
+                    english: { overall: 0, lessonsCompleted: 0, totalLessons: 5, scores: [], lastTestScore: 0, averageScore: 0 },
+                    science: { overall: 0, lessonsCompleted: 0, totalLessons: 5, scores: [], lastTestScore: 0, averageScore: 0 }
+                }
             };
 
             database.pendingApprovals.push(newStudent);
@@ -1376,6 +1835,8 @@
             } else {
                 if (currentUser.role === "admin") {
                     avatarStyle = "background: linear-gradient(135deg, #4361ee, #3a56d4);";
+                } else if (currentUser.role === "teacher") {
+                    avatarStyle = "background: linear-gradient(135deg, #ff9f1c, #e68900);";
                 } else {
                     avatarStyle = "background: linear-gradient(135deg, #2ec4b6, #25b0a4);";
                 }
@@ -1391,7 +1852,8 @@
                 '</div>' +
                 '<div class="brand-text">' +
                 '<h1>EduNova Pro</h1>' +
-                '<p>' + (currentUser.role === "admin" ? "Admin Portal" : "Student Portal") + '</p>' +
+                '<p>' + (currentUser.role === "admin" ? "Admin Portal" : 
+                         currentUser.role === "teacher" ? "Teacher Portal" : "Student Portal") + '</p>' +
                 '</div>' +
                 '</div>' +
                 '<div class="user-info">' +
@@ -1415,14 +1877,28 @@
                     { id: "dashboard", icon: "fa-tachometer-alt", label: "Dashboard" },
                     { id: "approvals", icon: "fa-user-clock", label: "Pending Approvals", badge: database.pendingApprovals.length },
                     { id: "users", icon: "fa-users", label: "User Management" },
+                    { id: "teachers", icon: "fa-chalkboard-teacher", label: "Teacher Management" },
+                    { id: "materials", icon: "fa-file-upload", label: "Learning Materials" },
                     { id: "reports", icon: "fa-chart-bar", label: "Reports & Analytics" },
                     { id: "settings", icon: "fa-cog", label: "System Settings" }
+                ];
+            } else if (currentUser.role === "teacher") {
+                menuItems = [
+                    { id: "dashboard", icon: "fa-tachometer-alt", label: "Dashboard" },
+                    { id: "students", icon: "fa-user-graduate", label: "My Students" },
+                    { id: "subjects", icon: "fa-book-open", label: "My Subjects" },
+                    { id: "upload", icon: "fa-upload", label: "Upload Materials" },
+                    { id: "assignments", icon: "fa-tasks", label: "Assignments" },
+                    { id: "grades", icon: "fa-chart-line", label: "Grade Students" },
+                    { id: "settings", icon: "fa-cog", label: "Settings" }
                 ];
             } else {
                 menuItems = [
                     { id: "dashboard", icon: "fa-home", label: "Dashboard" },
                     { id: "subjects", icon: "fa-book-open", label: "My Subjects" },
-                    { id: "progress", icon: "fa-chart-line", label: "Progress Tracker" },
+                    { id: "progress", icon: "fa-chart-line", label: "My Progress" },
+                    { id: "grades", icon: "fa-star", label: "My Grades" },
+                    { id: "materials", icon: "fa-download", label: "Learning Materials" },
                     { id: "settings", icon: "fa-user", label: "My Profile" }
                 ];
             }
@@ -1436,6 +1912,8 @@
             } else {
                 if (currentUser.role === "admin") {
                     menuHTML += "background: linear-gradient(135deg, #4361ee, #3a56d4);";
+                } else if (currentUser.role === "teacher") {
+                    menuHTML += "background: linear-gradient(135deg, #ff9f1c, #e68900);";
                 } else {
                     menuHTML += "background: linear-gradient(135deg, #2ec4b6, #25b0a4);";
                 }
@@ -1457,7 +1935,7 @@
                 '</div>' +
                 '<ul class="sidebar-menu">';
             
-            menuItems.forEach(function(item) {
+            menuItems.forEach(item => {
                 menuHTML += '<li>' +
                     '<button class="menu-btn ' + (activeView === item.id ? "active" : "") + '" onclick="setActiveView(\'' + item.id + '\')">' +
                     '<i class="fas ' + item.icon + '"></i>' +
@@ -1487,35 +1965,37 @@
                 case "dashboard": return renderDashboardView();
                 case "approvals": return renderApprovalsView();
                 case "users": return renderUsersView();
-                case "reports": return renderReportsView();
-                case "settings": return renderSettingsView();
+                case "teachers": return renderTeachersView();
+                case "students": return renderStudentsView();
                 case "subjects": return renderSubjectsView();
                 case "progress": return renderProgressView();
+                case "grades": return renderGradesView();
+                case "materials": return renderMaterialsView();
+                case "upload": return renderUploadView();
+                case "assignments": return renderAssignmentsView();
+                case "reports": return renderReportsView();
+                case "settings": return renderSettingsView();
+                case "lesson": return renderLessonView();
+                case "quiz": return renderQuizView();
                 default: return renderDashboardView();
             }
         }
 
         function renderDashboardView() {
-            const totalUsers = database.users.length;
-            const pendingApprovals = database.pendingApprovals.length;
-            const activeUsers = database.users.filter(function(u) {
-                return u.status === "active";
-            }).length;
-
             if (currentUser.role === "admin") {
-                let usersListHTML = '';
-                database.users.slice(0, 3).forEach(function(user) {
-                    usersListHTML += '<div style="display: flex; align-items: center; gap: 15px; padding: 15px; background: white; border-radius: 12px; box-shadow: var(--card-shadow); margin-bottom: 10px;">' +
-                        '<div style="width: 40px; height: 40px; border-radius: 50%; background: ' + (user.role === "admin" ? "#4361ee" : "#2ec4b6") + '; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">' +
-                        user.name.charAt(0).toUpperCase() +
+                const totalUsers = database.users.length;
+                const totalTeachers = database.teachers.length;
+                const pendingApprovals = database.pendingApprovals.length;
+                const activeStudents = database.users.filter(u => u.status === "active").length;
+                
+                let announcementsHTML = '';
+                database.announcements.slice(0, 3).forEach(announcement => {
+                    announcementsHTML += '<div style="background: white; padding: 20px; border-radius: 12px; box-shadow: var(--card-shadow); margin-bottom: 15px;">' +
+                        '<div style="display: flex; justify-content: space-between; margin-bottom: 10px;">' +
+                        '<h4 style="color: var(--dark);">' + announcement.title + '</h4>' +
+                        '<span style="font-size: 12px; color: var(--gray);">' + announcement.date + '</span>' +
                         '</div>' +
-                        '<div style="flex: 1;">' +
-                        '<div style="font-weight: 600; color: var(--dark);">' + user.name + '</div>' +
-                        '<div style="font-size: 14px; color: var(--gray);">' + user.serialNo + ' • ' + user.role + '</div>' +
-                        '</div>' +
-                        '<button class="action-btn edit" onclick="editUser(\'' + user.serialNo + '\')">' +
-                        '<i class="fas fa-edit"></i> Edit' +
-                        '</button>' +
+                        '<p style="color: var(--gray); font-size: 14px;">' + announcement.content + '</p>' +
                         '</div>';
                 });
                 
@@ -1525,9 +2005,14 @@
                     '</div>' +
                     '<div class="stats-grid">' +
                     '<div class="stat-card" onclick="setActiveView(\'users\')">' +
-                    '<h3>Total Users</h3>' +
+                    '<h3>Total Students</h3>' +
                     '<div class="stat-value">' + totalUsers + '</div>' +
-                    '<p>Click to view all users</p>' +
+                    '<p>Click to manage students</p>' +
+                    '</div>' +
+                    '<div class="stat-card" onclick="setActiveView(\'teachers\')">' +
+                    '<h3>Total Teachers</h3>' +
+                    '<div class="stat-value">' + totalTeachers + '</div>' +
+                    '<p>Click to manage teachers</p>' +
                     '</div>' +
                     '<div class="stat-card" onclick="setActiveView(\'approvals\')">' +
                     '<h3>Pending Approvals</h3>' +
@@ -1535,57 +2020,642 @@
                     '<p>Awaiting review</p>' +
                     '</div>' +
                     '<div class="stat-card">' +
-                    '<h3>Active Users</h3>' +
-                    '<div class="stat-value">' + activeUsers + '</div>' +
+                    '<h3>Active Students</h3>' +
+                    '<div class="stat-value">' + activeStudents + '</div>' +
                     '<p>Currently active</p>' +
-                    '</div>' +
-                    '<div class="stat-card">' +
-                    '<h3>System Status</h3>' +
-                    '<div class="stat-value">100%</div>' +
-                    '<p>All systems operational</p>' +
                     '</div>' +
                     '</div>' +
                     '<div style="margin-top: 30px;">' +
-                    '<h3 style="margin-bottom: 20px; color: var(--dark);">Recent Activities</h3>' +
-                    usersListHTML +
+                    '<h3 style="margin-bottom: 20px; color: var(--dark);">Recent Announcements</h3>' +
+                    announcementsHTML +
+                    '<button class="btn" onclick="createAnnouncement()" style="width: auto; margin-top: 10px;">' +
+                    '<i class="fas fa-bullhorn"></i> New Announcement' +
+                    '</button>' +
+                    '</div>';
+            } else if (currentUser.role === "teacher") {
+                const myStudents = database.users.filter(u => u.createdBy === currentUser.name || u.grade === currentUser.gradeLevel?.[0]);
+                const mySubjects = currentUser.subjects || [];
+                
+                return '<div class="content-header">' +
+                    '<h2>Teacher Dashboard</h2>' +
+                    '<p>Welcome, ' + currentUser.name.split(" ")[0] + '!</p>' +
+                    '</div>' +
+                    '<div class="stats-grid">' +
+                    '<div class="stat-card" onclick="setActiveView(\'students\')">' +
+                    '<h3>My Students</h3>' +
+                    '<div class="stat-value">' + myStudents.length + '</div>' +
+                    '<p>Click to view students</p>' +
+                    '</div>' +
+                    '<div class="stat-card" onclick="setActiveView(\'subjects\')">' +
+                    '<h3>My Subjects</h3>' +
+                    '<div class="stat-value">' + mySubjects.length + '</div>' +
+                    '<p>Click to teach</p>' +
+                    '</div>' +
+                    '<div class="stat-card" onclick="setActiveView(\'upload\')">' +
+                    '<h3>Materials</h3>' +
+                    '<div class="stat-value">' + database.learningMaterials.filter(m => m.uploadedBy === currentUser.name).length + '</div>' +
+                    '<p>Click to upload</p>' +
+                    '</div>' +
+                    '<div class="stat-card" onclick="setActiveView(\'grades\')">' +
+                    '<h3>Grade to Give</h3>' +
+                    '<div class="stat-value">' + database.assignments.filter(a => a.assignedBy === currentUser.name).length + '</div>' +
+                    '<p>Pending grading</p>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div style="margin-top: 30px;">' +
+                    '<h3 style="margin-bottom: 20px; color: var(--dark);">Quick Actions</h3>' +
+                    '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">' +
+                    '<button class="btn" onclick="setActiveView(\'upload\')">' +
+                    '<i class="fas fa-upload"></i> Upload Material' +
+                    '</button>' +
+                    '<button class="btn btn-success" onclick="createAssignment()">' +
+                    '<i class="fas fa-tasks"></i> Create Assignment' +
+                    '</button>' +
+                    '<button class="btn btn-warning" onclick="setActiveView(\'grades\')">' +
+                    '<i class="fas fa-star"></i> Grade Students' +
+                    '</button>' +
+                    '<button class="btn btn-info" onclick="addStudent()">' +
+                    '<i class="fas fa-user-plus"></i> Add Student' +
+                    '</button>' +
+                    '</div>' +
                     '</div>';
             } else {
+                const mathProgress = currentUser.progress?.mathematics?.overall || 0;
+                const englishProgress = currentUser.progress?.english?.overall || 0;
+                const scienceProgress = currentUser.progress?.science?.overall || 0;
+                const overallProgress = Math.round((mathProgress + englishProgress + scienceProgress) / 3);
+                
+                let announcementsHTML = '';
+                database.announcements.slice(0, 3).forEach(announcement => {
+                    announcementsHTML += '<div style="background: white; padding: 15px; border-radius: 12px; box-shadow: var(--card-shadow); margin-bottom: 10px;">' +
+                        '<h4 style="color: var(--dark); margin-bottom: 5px; font-size: 16px;">' + announcement.title + '</h4>' +
+                        '<p style="color: var(--gray); font-size: 14px;">' + announcement.content + '</p>' +
+                        '</div>';
+                });
+                
                 return '<div class="content-header">' +
                     '<h2>Welcome, ' + currentUser.name.split(" ")[0] + '!</h2>' +
                     '<p>Continue your learning journey</p>' +
                     '</div>' +
                     '<div class="stats-grid">' +
-                    '<div class="stat-card">' +
-                    '<h3>Progress</h3>' +
-                    '<div class="stat-value">65%</div>' +
-                    '<p>Overall Completion</p>' +
+                    '<div class="stat-card" onclick="setActiveView(\'progress\')">' +
+                    '<h3>Overall Progress</h3>' +
+                    '<div class="stat-value">' + overallProgress + '%</div>' +
+                    '<p>Across all subjects</p>' +
+                    '</div>' +
+                    '<div class="stat-card" onclick="setActiveView(\'subjects\')">' +
+                    '<h3>Active Subjects</h3>' +
+                    '<div class="stat-value">3</div>' +
+                    '<p>Mathematics, English, Science</p>' +
+                    '</div>' +
+                    '<div class="stat-card" onclick="setActiveView(\'grades\')">' +
+                    '<h3>Average Score</h3>' +
+                    '<div class="stat-value">' + (currentUser.progress?.mathematics?.averageScore || 0).toFixed(1) + '</div>' +
+                    '<p>Current average</p>' +
                     '</div>' +
                     '<div class="stat-card">' +
-                    '<h3>Subjects</h3>' +
-                    '<div class="stat-value">' + database.subjects.grade1.length + '</div>' +
-                    '<p>Active Courses</p>' +
+                    '<h3>Attendance</h3>' +
+                    '<div class="stat-value">' + (currentUser.attendance || 95) + '%</div>' +
+                    '<p>This semester</p>' +
                     '</div>' +
-                    '<div class="stat-card">' +
-                    '<h3>Streak</h3>' +
-                    '<div class="stat-value">7 days</div>' +
-                    '<p>Learning Streak</p>' +
                     '</div>' +
-                    '<div class="stat-card">' +
-                    '<h3>Points</h3>' +
-                    '<div class="stat-value">450</div>' +
-                    '<p>Achievement Points</p>' +
+                    '<div style="margin-top: 30px;">' +
+                    '<h3 style="margin-bottom: 20px; color: var(--dark);">Recent Announcements</h3>' +
+                    announcementsHTML +
+                    '</div>' +
+                    '<div style="margin-top: 30px;">' +
+                    '<h3 style="margin-bottom: 20px; color: var(--dark);">Today\'s Lessons</h3>' +
+                    '<div style="display: grid; gap: 15px;">' +
+                    '<div style="background: white; padding: 20px; border-radius: 12px; box-shadow: var(--card-shadow); cursor: pointer;" onclick="startSubjectLesson(\'mathematics\')">' +
+                    '<div style="display: flex; align-items: center; gap: 15px;">' +
+                    '<div style="width: 40px; height: 40px; background: #4361ee; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white;">' +
+                    '<i class="fas fa-calculator"></i>' +
+                    '</div>' +
+                    '<div style="flex: 1;">' +
+                    '<h4 style="color: var(--dark); margin-bottom: 5px;">Mathematics</h4>' +
+                    '<p style="color: var(--gray); font-size: 14px;">Next: Subtraction Basics</p>' +
+                    '</div>' +
+                    '<div style="font-size: 14px; color: var(--gray);">30 min</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div style="background: white; padding: 20px; border-radius: 12px; box-shadow: var(--card-shadow); cursor: pointer;" onclick="startSubjectLesson(\'english\')">' +
+                    '<div style="display: flex; align-items: center; gap: 15px;">' +
+                    '<div style="width: 40px; height: 40px; background: #2ec4b6; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white;">' +
+                    '<i class="fas fa-book"></i>' +
+                    '</div>' +
+                    '<div style="flex: 1;">' +
+                    '<h4 style="color: var(--dark); margin-bottom: 5px;">English</h4>' +
+                    '<p style="color: var(--gray); font-size: 14px;">Next: Simple Sentences</p>' +
+                    '</div>' +
+                    '<div style="font-size: 14px; color: var(--gray);">35 min</div>' +
+                    '</div>' +
+                    '</div>' +
                     '</div>' +
                     '</div>';
             }
         }
 
+        function renderSubjectsView() {
+            if (currentUser.role === "teacher") {
+                const mySubjects = currentUser.subjects || [];
+                let subjectsHTML = '';
+                
+                mySubjects.forEach(subjectName => {
+                    const subject = database.subjects.grade1.find(s => s.name === subjectName);
+                    if (subject) {
+                        const students = database.users.filter(u => u.grade === "Grade 1");
+                        const completedLessons = students.reduce((total, student) => {
+                            return total + (student.progress?.[subjectName.toLowerCase()]?.lessonsCompleted || 0);
+                        }, 0);
+                        const totalLessons = subject.lessons.length * students.length;
+                        const progress = totalLessons > 0 ? Math.round((completedLessons / totalLessons) * 100) : 0;
+                        
+                        subjectsHTML += '<div class="subject-card" onclick="teachSubject(\'' + subjectName + '\')">' +
+                            '<div class="subject-header">' +
+                            '<div class="subject-icon" style="background: ' + subject.color + '">' +
+                            '<i class="fas ' + subject.icon + '"></i>' +
+                            '</div>' +
+                            '<div class="subject-info">' +
+                            '<h3>' + subject.name + '</h3>' +
+                            '<p>' + subject.description + '</p>' +
+                            '</div>' +
+                            '</div>' +
+                            '<div class="progress-bar">' +
+                            '<div class="progress-fill" style="width: ' + progress + '%; background: ' + subject.color + ';"></div>' +
+                            '</div>' +
+                            '<div style="display: flex; justify-content: space-between; margin-top: 10px;">' +
+                            '<span style="font-size: 14px; color: var(--gray);">' + progress + '% Complete</span>' +
+                            '<span style="font-size: 14px; color: var(--gray);">' + subject.lessons.length + ' lessons</span>' +
+                            '</div>' +
+                            '</div>';
+                    }
+                });
+                
+                return '<div class="content-header">' +
+                    '<h2>My Subjects</h2>' +
+                    '<p>Manage your teaching subjects</p>' +
+                    '</div>' +
+                    '<div class="subjects-grid">' +
+                    subjectsHTML +
+                    '</div>' +
+                    '<div style="margin-top: 30px;">' +
+                    '<button class="btn" onclick="addTeachingSubject()">' +
+                    '<i class="fas fa-plus"></i> Add Teaching Subject' +
+                    '</button>' +
+                    '</div>';
+            } else {
+                let subjectsHTML = '';
+                
+                database.subjects.grade1.forEach(subject => {
+                    const subjectProgress = currentUser.progress?.[subject.name.toLowerCase()] || { overall: 0, lessonsCompleted: 0 };
+                    const completed = subjectProgress.lessonsCompleted || 0;
+                    const total = subject.lessons.length;
+                    const progress = total > 0 ? Math.round((completed / total) * 100) : 0;
+                    
+                    subjectsHTML += '<div class="subject-card" onclick="startSubjectLesson(\'' + subject.name.toLowerCase() + '\')">' +
+                        '<div class="subject-header">' +
+                        '<div class="subject-icon" style="background: ' + subject.color + '">' +
+                        '<i class="fas ' + subject.icon + '"></i>' +
+                        '</div>' +
+                        '<div class="subject-info">' +
+                        '<h3>' + subject.name + '</h3>' +
+                        '<p>' + subject.description + '</p>' +
+                        '</div>' +
+                        '</div>' +
+                        '<div class="progress-bar">' +
+                        '<div class="progress-fill" style="width: ' + progress + '%; background: ' + subject.color + ';"></div>' +
+                        '</div>' +
+                        '<div style="display: flex; justify-content: space-between; margin-top: 10px;">' +
+                        '<span style="font-size: 14px; color: var(--gray);">' + progress + '% Complete</span>' +
+                        '<span style="font-size: 14px; color: var(--gray);">' + completed + ' of ' + total + ' lessons</span>' +
+                        '</div>' +
+                        '<div class="lesson-list">';
+                    
+                    subject.lessons.forEach(lesson => {
+                        const isCompleted = lesson.completed || false;
+                        subjectsHTML += '<div class="lesson-item">' +
+                            '<div style="display: flex; align-items: center; gap: 10px;">' +
+                            '<i class="fas ' + (isCompleted ? 'fa-check-circle lesson-completed' : 'fa-circle lesson-pending') + '"></i>' +
+                            '<span>' + lesson.title + '</span>' +
+                            '</div>' +
+                            '<span style="font-size: 12px; color: var(--gray);">' + lesson.duration + '</span>' +
+                            '</div>';
+                    });
+                    
+                    subjectsHTML += '</div>' +
+                        '</div>';
+                });
+                
+                return '<div class="content-header">' +
+                    '<h2>My Subjects</h2>' +
+                    '<p>Continue learning from where you left off</p>' +
+                    '</div>' +
+                    '<div class="subjects-grid">' +
+                    subjectsHTML +
+                    '</div>';
+            }
+        }
+
+        function renderProgressView() {
+            const mathProgress = currentUser.progress?.mathematics || { overall: 0, averageScore: 0 };
+            const englishProgress = currentUser.progress?.english || { overall: 0, averageScore: 0 };
+            const scienceProgress = currentUser.progress?.science || { overall: 0, averageScore: 0 };
+            
+            return '<div class="content-header">' +
+                '<h2>My Progress</h2>' +
+                '<p>Track your learning journey</p>' +
+                '</div>' +
+                '<div class="stats-grid">' +
+                '<div class="stat-card">' +
+                '<h3>Mathematics</h3>' +
+                '<div class="stat-value">' + mathProgress.overall + '%</div>' +
+                '<div class="progress-bar">' +
+                '<div class="progress-fill" style="width: ' + mathProgress.overall + '%; background: #4361ee;"></div>' +
+                '</div>' +
+                '<p>Average Score: ' + mathProgress.averageScore.toFixed(1) + '</p>' +
+                '</div>' +
+                '<div class="stat-card">' +
+                '<h3>English</h3>' +
+                '<div class="stat-value">' + englishProgress.overall + '%</div>' +
+                '<div class="progress-bar">' +
+                '<div class="progress-fill" style="width: ' + englishProgress.overall + '%; background: #2ec4b6;"></div>' +
+                '</div>' +
+                '<p>Average Score: ' + englishProgress.averageScore.toFixed(1) + '</p>' +
+                '</div>' +
+                '<div class="stat-card">' +
+                '<h3>Science</h3>' +
+                '<div class="stat-value">' + scienceProgress.overall + '%</div>' +
+                '<div class="progress-bar">' +
+                '<div class="progress-fill" style="width: ' + scienceProgress.overall + '%; background: #ff9f1c;"></div>' +
+                '</div>' +
+                '<p>Average Score: ' + scienceProgress.averageScore.toFixed(1) + '</p>' +
+                '</div>' +
+                '</div>' +
+                '<div style="margin-top: 30px;">' +
+                '<h3 style="margin-bottom: 20px; color: var(--dark);">Recent Test Scores</h3>' +
+                '<div style="display: grid; gap: 15px;">' +
+                '<div class="score-card">' +
+                '<div style="display: flex; justify-content: space-between; align-items: center;">' +
+                '<div>' +
+                '<h4 style="color: var(--dark); margin-bottom: 5px;">Mathematics Test</h4>' +
+                '<p style="color: var(--gray); font-size: 14px;">Basic Addition & Subtraction</p>' +
+                '</div>' +
+                '<div class="score-display" style="font-size: 24px; color: #4361ee;">' + (mathProgress.lastTestScore || 0) + '%</div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="score-card">' +
+                '<div style="display: flex; justify-content: space-between; align-items: center;">' +
+                '<div>' +
+                '<h4 style="color: var(--dark); margin-bottom: 5px;">English Test</h4>' +
+                '<p style="color: var(--gray); font-size: 14px;">Phonics & Reading</p>' +
+                '</div>' +
+                '<div class="score-display" style="font-size: 24px; color: #2ec4b6;">' + (englishProgress.lastTestScore || 0) + '%</div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="score-card">' +
+                '<div style="display: flex; justify-content: space-between; align-items: center;">' +
+                '<div>' +
+                '<h4 style="color: var(--dark); margin-bottom: 5px;">Science Test</h4>' +
+                '<p style="color: var(--gray); font-size: 14px;">Living Things</p>' +
+                '</div>' +
+                '<div class="score-display" style="font-size: 24px; color: #ff9f1c;">' + (scienceProgress.lastTestScore || 0) + '%</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>';
+        }
+
+        function renderGradesView() {
+            if (currentUser.role === "teacher") {
+                const myStudents = database.users.filter(u => u.createdBy === currentUser.name || u.grade === currentUser.gradeLevel?.[0]);
+                
+                let gradesHTML = '<div class="content-header">' +
+                    '<h2>Grade Students</h2>' +
+                    '<p>Enter grades for your students</p>' +
+                    '</div>' +
+                    '<div class="admin-table-container">' +
+                    '<table class="admin-table">' +
+                    '<thead>' +
+                    '<tr>' +
+                    '<th>Student Name</th>' +
+                    '<th>Mathematics</th>' +
+                    '<th>English</th>' +
+                    '<th>Science</th>' +
+                    '<th>Average</th>' +
+                    '<th>Actions</th>' +
+                    '</tr>' +
+                    '</thead>' +
+                    '<tbody>';
+                
+                myStudents.forEach(student => {
+                    const mathScore = student.progress?.mathematics?.averageScore || 0;
+                    const englishScore = student.progress?.english?.averageScore || 0;
+                    const scienceScore = student.progress?.science?.averageScore || 0;
+                    const average = ((mathScore + englishScore + scienceScore) / 3).toFixed(1);
+                    
+                    gradesHTML += '<tr>' +
+                        '<td>' + student.name + '</td>' +
+                        '<td>' +
+                        '<input type="number" class="form-control" style="width: 80px; padding: 8px;" value="' + mathScore + '" ' +
+                        'onchange="updateStudentGrade(\'' + student.serialNo + '\', \'mathematics\', this.value)">' +
+                        '</td>' +
+                        '<td>' +
+                        '<input type="number" class="form-control" style="width: 80px; padding: 8px;" value="' + englishScore + '" ' +
+                        'onchange="updateStudentGrade(\'' + student.serialNo + '\', \'english\', this.value)">' +
+                        '</td>' +
+                        '<td>' +
+                        '<input type="number" class="form-control" style="width: 80px; padding: 8px;" value="' + scienceScore + '" ' +
+                        'onchange="updateStudentGrade(\'' + student.serialNo + '\', \'science\', this.value)">' +
+                        '</td>' +
+                        '<td><strong>' + average + '</strong></td>' +
+                        '<td>' +
+                        '<button class="action-btn view" onclick="viewStudentDetails(\'' + student.serialNo + '\')">' +
+                        '<i class="fas fa-eye"></i> View' +
+                        '</button>' +
+                        '</td>' +
+                        '</tr>';
+                });
+                
+                gradesHTML += '</tbody>' +
+                    '</table>' +
+                    '</div>' +
+                    '<div style="margin-top: 30px;">' +
+                    '<button class="btn btn-success" onclick="generateReportCards()">' +
+                    '<i class="fas fa-print"></i> Generate Report Cards' +
+                    '</button>' +
+                    '</div>';
+                
+                return gradesHTML;
+            } else {
+                const mathProgress = currentUser.progress?.mathematics || {};
+                const englishProgress = currentUser.progress?.english || {};
+                const scienceProgress = currentUser.progress?.science || {};
+                
+                return '<div class="content-header">' +
+                    '<h2>My Grades</h2>' +
+                    '<p>View your academic performance</p>' +
+                    '</div>' +
+                    '<div class="grades-container">' +
+                    '<h3 style="margin-bottom: 20px; color: var(--dark);">Subject Grades</h3>' +
+                    '<div class="grade-card">' +
+                    '<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">' +
+                    '<div style="display: flex; align-items: center; gap: 15px;">' +
+                    '<div style="width: 50px; height: 50px; background: #4361ee; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white;">' +
+                    '<i class="fas fa-calculator"></i>' +
+                    '</div>' +
+                    '<div>' +
+                    '<h4 style="color: var(--dark);">Mathematics</h4>' +
+                    '<p style="color: var(--gray); font-size: 14px;">Grade 1</p>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="score-display">' + (mathProgress.averageScore || 0).toFixed(1) + '%</div>' +
+                    '</div>' +
+                    '<div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;">' +
+                    (mathProgress.scores || []).map(score => 
+                        '<div style="text-align: center; padding: 10px; background: white; border-radius: 8px;">' +
+                        '<div style="font-weight: bold; color: var(--dark);">' + score + '</div>' +
+                        '<div style="font-size: 12px; color: var(--gray);">Test</div>' +
+                        '</div>'
+                    ).join('') +
+                    '</div>' +
+                    '</div>' +
+                    
+                    '<div class="grade-card" style="margin-top: 15px;">' +
+                    '<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">' +
+                    '<div style="display: flex; align-items: center; gap: 15px;">' +
+                    '<div style="width: 50px; height: 50px; background: #2ec4b6; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white;">' +
+                    '<i class="fas fa-book"></i>' +
+                    '</div>' +
+                    '<div>' +
+                    '<h4 style="color: var(--dark);">English</h4>' +
+                    '<p style="color: var(--gray); font-size: 14px;">Grade 1</p>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="score-display">' + (englishProgress.averageScore || 0).toFixed(1) + '%</div>' +
+                    '</div>' +
+                    '<div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;">' +
+                    (englishProgress.scores || []).map(score => 
+                        '<div style="text-align: center; padding: 10px; background: white; border-radius: 8px;">' +
+                        '<div style="font-weight: bold; color: var(--dark);">' + score + '</div>' +
+                        '<div style="font-size: 12px; color: var(--gray);">Test</div>' +
+                        '</div>'
+                    ).join('') +
+                    '</div>' +
+                    '</div>' +
+                    
+                    '<div class="grade-card" style="margin-top: 15px;">' +
+                    '<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">' +
+                    '<div style="display: flex; align-items: center; gap: 15px;">' +
+                    '<div style="width: 50px; height: 50px; background: #ff9f1c; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white;">' +
+                    '<i class="fas fa-flask"></i>' +
+                    '</div>' +
+                    '<div>' +
+                    '<h4 style="color: var(--dark);">Science</h4>' +
+                    '<p style="color: var(--gray); font-size: 14px;">Grade 1</p>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="score-display">' + (scienceProgress.averageScore || 0).toFixed(1) + '%</div>' +
+                    '</div>' +
+                    '<div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;">' +
+                    (scienceProgress.scores || []).map(score => 
+                        '<div style="text-align: center; padding: 10px; background: white; border-radius: 8px;">' +
+                        '<div style="font-weight: bold; color: var(--dark);">' + score + '</div>' +
+                        '<div style="font-size: 12px; color: var(--gray);">Test</div>' +
+                        '</div>'
+                    ).join('') +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+            }
+        }
+
+        function renderMaterialsView() {
+            let materialsHTML = '<div class="content-header">' +
+                '<h2>Learning Materials</h2>' +
+                '<p>Download study materials and resources</p>' +
+                '</div>';
+            
+            if (currentUser.role === "admin" || currentUser.role === "teacher") {
+                materialsHTML += '<button class="btn" onclick="setActiveView(\'upload\')" style="margin-bottom: 20px;">' +
+                    '<i class="fas fa-upload"></i> Upload New Material' +
+                    '</button>';
+            }
+            
+            materialsHTML += '<div class="admin-table-container">' +
+                '<table class="admin-table">' +
+                '<thead>' +
+                '<tr>' +
+                '<th>Title</th>' +
+                '<th>Subject</th>' +
+                '<th>Grade</th>' +
+                '<th>Type</th>' +
+                '<th>Uploaded By</th>' +
+                '<th>Downloads</th>' +
+                '<th>Actions</th>' +
+                '</tr>' +
+                '</thead>' +
+                '<tbody>';
+            
+            database.learningMaterials.forEach(material => {
+                materialsHTML += '<tr>' +
+                    '<td>' + material.title + '</td>' +
+                    '<td>' + material.subject + '</td>' +
+                    '<td>' + material.grade + '</td>' +
+                    '<td>' + material.type.toUpperCase() + '</td>' +
+                    '<td>' + material.uploadedBy + '</td>' +
+                    '<td>' + material.downloads + '</td>' +
+                    '<td>' +
+                    '<div class="action-buttons">' +
+                    '<button class="action-btn view" onclick="downloadMaterial(' + material.id + ')">' +
+                    '<i class="fas fa-download"></i> Download' +
+                    '</button>';
+                
+                if (currentUser.role === "admin" || currentUser.name === material.uploadedBy) {
+                    materialsHTML += '<button class="action-btn delete" onclick="deleteMaterial(' + material.id + ')">' +
+                        '<i class="fas fa-trash"></i> Delete' +
+                        '</button>';
+                }
+                
+                materialsHTML += '</div>' +
+                    '</td>' +
+                    '</tr>';
+            });
+            
+            materialsHTML += '</tbody>' +
+                '</table>' +
+                '</div>';
+            
+            return materialsHTML;
+        }
+
+        function renderUploadView() {
+            return '<div class="content-header">' +
+                '<h2>Upload Learning Materials</h2>' +
+                '<p>Share educational resources with students</p>' +
+                '</div>' +
+                '<div class="upload-container">' +
+                '<form onsubmit="handleUpload(event)">' +
+                '<div class="form-group">' +
+                '<label>Material Title</label>' +
+                '<input type="text" class="form-control" id="materialTitle" required>' +
+                '</div>' +
+                '<div class="form-group">' +
+                '<label>Subject</label>' +
+                '<select class="form-control" id="materialSubject" required>' +
+                '<option value="Mathematics">Mathematics</option>' +
+                '<option value="English">English</option>' +
+                '<option value="Science">Science</option>' +
+                '<option value="General">General</option>' +
+                '</select>' +
+                '</div>' +
+                '<div class="form-group">' +
+                '<label>Grade Level</label>' +
+                '<select class="form-control" id="materialGrade" required>' +
+                '<option value="Grade 1">Grade 1</option>' +
+                '<option value="Grade 2">Grade 2</option>' +
+                '<option value="Grade 3">Grade 3</option>' +
+                '<option value="Grade 4">Grade 4</option>' +
+                '<option value="Grade 5">Grade 5</option>' +
+                '</select>' +
+                '</div>' +
+                '<div class="form-group">' +
+                '<label>Material Type</label>' +
+                '<select class="form-control" id="materialType" required>' +
+                '<option value="pdf">PDF Document</option>' +
+                '<option value="video">Video</option>' +
+                '<option value="image">Image</option>' +
+                '<option value="audio">Audio</option>' +
+                '<option value="document">Document</option>' +
+                '</select>' +
+                '</div>' +
+                '<div class="upload-area" onclick="document.getElementById(\'fileInput\').click()">' +
+                '<i class="fas fa-cloud-upload-alt" style="font-size: 48px; color: var(--gray); margin-bottom: 15px;"></i>' +
+                '<h4 style="margin-bottom: 10px; color: var(--dark);">Click to upload files</h4>' +
+                '<p style="color: var(--gray);">Supported formats: PDF, MP4, JPG, PNG, DOC, MP3</p>' +
+                '<input type="file" id="fileInput" hidden onchange="handleFileSelect(event)">' +
+                '</div>' +
+                '<div id="selectedFiles" class="uploaded-files"></div>' +
+                '<button type="submit" class="btn btn-success" style="margin-top: 20px;">' +
+                '<i class="fas fa-upload"></i> Upload Material' +
+                '</button>' +
+                '</form>' +
+                '</div>';
+        }
+
+        function renderAssignmentsView() {
+            let assignmentsHTML = '<div class="content-header">' +
+                '<h2>Assignments</h2>' +
+                '<p>Create and manage student assignments</p>' +
+                '</div>';
+            
+            if (currentUser.role === "teacher") {
+                assignmentsHTML += '<button class="btn" onclick="createAssignment()" style="margin-bottom: 20px;">' +
+                    '<i class="fas fa-plus"></i> Create New Assignment' +
+                    '</button>';
+            }
+            
+            assignmentsHTML += '<div class="admin-table-container">' +
+                '<table class="admin-table">' +
+                '<thead>' +
+                '<tr>' +
+                '<th>Title</th>' +
+                '<th>Subject</th>' +
+                '<th>Grade</th>' +
+                '<th>Due Date</th>' +
+                '<th>Assigned By</th>' +
+                '<th>Submissions</th>' +
+                '<th>Actions</th>' +
+                '</tr>' +
+                '</thead>' +
+                '<tbody>';
+            
+            database.assignments.forEach(assignment => {
+                const totalStudents = database.users.filter(u => u.grade === assignment.grade).length;
+                const submissions = assignment.submissions?.length || 0;
+                
+                assignmentsHTML += '<tr>' +
+                    '<td>' + assignment.title + '</td>' +
+                    '<td>' + assignment.subject + '</td>' +
+                    '<td>' + assignment.grade + '</td>' +
+                    '<td>' + assignment.dueDate + '</td>' +
+                    '<td>' + assignment.assignedBy + '</td>' +
+                    '<td>' + submissions + '/' + totalStudents + '</td>' +
+                    '<td>' +
+                    '<div class="action-buttons">' +
+                    '<button class="action-btn view" onclick="viewAssignment(' + assignment.id + ')">' +
+                    '<i class="fas fa-eye"></i> View' +
+                    '</button>';
+                
+                if (currentUser.role === "teacher" && currentUser.name === assignment.assignedBy) {
+                    assignmentsHTML += '<button class="action-btn edit" onclick="editAssignment(' + assignment.id + ')">' +
+                        '<i class="fas fa-edit"></i> Edit' +
+                        '</button>';
+                }
+                
+                assignmentsHTML += '</div>' +
+                    '</td>' +
+                    '</tr>';
+            });
+            
+            assignmentsHTML += '</tbody>' +
+                '</table>' +
+                '</div>';
+            
+            return assignmentsHTML;
+        }
+
         function renderUsersView() {
             let usersRowsHTML = '';
-            database.users.forEach(function(user) {
+            database.users.forEach(user => {
+                const mathScore = user.progress?.mathematics?.averageScore || 0;
+                const englishScore = user.progress?.english?.averageScore || 0;
+                const scienceScore = user.progress?.science?.averageScore || 0;
+                const average = ((mathScore + englishScore + scienceScore) / 3).toFixed(1);
+                
                 usersRowsHTML += '<tr>' +
                     '<td>' +
                     '<div style="display: flex; align-items: center; gap: 10px;">' +
-                    '<div style="width: 32px; height: 32px; border-radius: 50%; background: ' + (user.role === "admin" ? "#4361ee" : "#2ec4b6") + '; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">' +
+                    '<div style="width: 32px; height: 32px; border-radius: 50%; background: #2ec4b6; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">' +
                     user.name.charAt(0).toUpperCase() +
                     '</div>' +
                     user.name +
@@ -1593,11 +2663,12 @@
                     '</td>' +
                     '<td>' + user.serialNo + '</td>' +
                     '<td>' + user.email + '</td>' +
-                    '<td><span style="padding: 4px 12px; background: ' + (user.role === "admin" ? "rgba(67, 97, 238, 0.1)" : "rgba(46, 196, 182, 0.1)") + '; color: ' + (user.role === "admin" ? "#4361ee" : "#2ec4b6") + '; border-radius: 20px; font-size: 12px;">' + user.role.toUpperCase() + '</span></td>' +
+                    '<td>' + user.grade + '</td>' +
+                    '<td>' + average + '%</td>' +
                     '<td><span style="padding: 4px 12px; background: rgba(6, 214, 160, 0.1); color: #06d6a0; border-radius: 20px; font-size: 12px;">' + user.status.toUpperCase() + '</span></td>' +
                     '<td>' +
                     '<div class="action-buttons">' +
-                    '<button class="action-btn view" onclick="viewUserDetails(\'' + user.serialNo + '\')">' +
+                    '<button class="action-btn view" onclick="viewStudentDetails(\'' + user.serialNo + '\')">' +
                     '<i class="fas fa-eye"></i> View' +
                     '</button>' +
                     '<button class="action-btn edit" onclick="editUser(\'' + user.serialNo + '\')">' +
@@ -1612,8 +2683,8 @@
             });
             
             return '<div class="content-header">' +
-                '<h2>User Management</h2>' +
-                '<p>Manage all system users</p>' +
+                '<h2>Student Management</h2>' +
+                '<p>Manage all student accounts</p>' +
                 '</div>' +
                 '<div class="admin-table-container">' +
                 '<table class="admin-table">' +
@@ -1622,7 +2693,8 @@
                 '<th>Name</th>' +
                 '<th>Serial No.</th>' +
                 '<th>Email</th>' +
-                '<th>Role</th>' +
+                '<th>Grade</th>' +
+                '<th>Average</th>' +
                 '<th>Status</th>' +
                 '<th>Actions</th>' +
                 '</tr>' +
@@ -1633,11 +2705,73 @@
                 '</table>' +
                 '</div>' +
                 '<div style="margin-top: 30px; display: flex; gap: 15px;">' +
-                '<button class="btn btn-success" onclick="createNewUser()" style="width: auto;">' +
-                '<i class="fas fa-user-plus"></i> Add New User' +
+                '<button class="btn btn-success" onclick="addStudent()" style="width: auto;">' +
+                '<i class="fas fa-user-plus"></i> Add New Student' +
                 '</button>' +
-                '<button class="btn btn-secondary" onclick="exportUsers()" style="width: auto;">' +
-                '<i class="fas fa-download"></i> Export Users' +
+                '<button class="btn btn-secondary" onclick="exportStudents()" style="width: auto;">' +
+                '<i class="fas fa-download"></i> Export Students' +
+                '</button>' +
+                '</div>';
+        }
+
+        function renderTeachersView() {
+            let teachersRowsHTML = '';
+            database.teachers.forEach(teacher => {
+                teachersRowsHTML += '<tr>' +
+                    '<td>' +
+                    '<div style="display: flex; align-items: center; gap: 10px;">' +
+                    '<div style="width: 32px; height: 32px; border-radius: 50%; background: #ff9f1c; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">' +
+                    teacher.name.charAt(0).toUpperCase() +
+                    '</div>' +
+                    teacher.name +
+                    '</div>' +
+                    '</td>' +
+                    '<td>' + teacher.serialNo + '</td>' +
+                    '<td>' + teacher.email + '</td>' +
+                    '<td>' + (teacher.subjects || []).join(', ') + '</td>' +
+                    '<td>' + (teacher.gradeLevel || []).join(', ') + '</td>' +
+                    '<td><span style="padding: 4px 12px; background: rgba(6, 214, 160, 0.1); color: #06d6a0; border-radius: 20px; font-size: 12px;">' + teacher.status.toUpperCase() + '</span></td>' +
+                    '<td>' +
+                    '<div class="action-buttons">' +
+                    '<button class="action-btn view" onclick="viewTeacherDetails(\'' + teacher.serialNo + '\')">' +
+                    '<i class="fas fa-eye"></i> View' +
+                    '</button>' +
+                    '<button class="action-btn edit" onclick="editTeacher(\'' + teacher.serialNo + '\')">' +
+                    '<i class="fas fa-edit"></i> Edit' +
+                    '</button>' +
+                    '<button class="action-btn delete" onclick="deleteTeacher(\'' + teacher.serialNo + '\')">' +
+                    '<i class="fas fa-trash"></i> Delete' +
+                    '</button>' +
+                    '</div>' +
+                    '</td>' +
+                    '</tr>';
+            });
+            
+            return '<div class="content-header">' +
+                '<h2>Teacher Management</h2>' +
+                '<p>Manage all teacher accounts</p>' +
+                '</div>' +
+                '<div class="admin-table-container">' +
+                '<table class="admin-table">' +
+                '<thead>' +
+                '<tr>' +
+                '<th>Name</th>' +
+                '<th>Serial No.</th>' +
+                '<th>Email</th>' +
+                '<th>Subjects</th>' +
+                '<th>Grade Levels</th>' +
+                '<th>Status</th>' +
+                '<th>Actions</th>' +
+                '</tr>' +
+                '</thead>' +
+                '<tbody>' +
+                teachersRowsHTML +
+                '</tbody>' +
+                '</table>' +
+                '</div>' +
+                '<div style="margin-top: 30px; display: flex; gap: 15px;">' +
+                '<button class="btn btn-success" onclick="addTeacher()" style="width: auto;">' +
+                '<i class="fas fa-chalkboard-teacher"></i> Add New Teacher' +
                 '</button>' +
                 '</div>';
         }
@@ -1651,10 +2785,11 @@
             }
 
             let approvalsRowsHTML = '';
-            database.pendingApprovals.forEach(function(user) {
+            database.pendingApprovals.forEach(user => {
                 approvalsRowsHTML += '<tr>' +
                     '<td>' + user.name + '</td>' +
                     '<td>' + user.email + '</td>' +
+                    '<td>' + user.grade + '</td>' +
                     '<td>' + new Date(user.dob).toLocaleDateString() + '</td>' +
                     '<td>' + new Date(user.requestedDate).toLocaleDateString() + '</td>' +
                     '<td>' +
@@ -1680,6 +2815,7 @@
                 '<tr>' +
                 '<th>Name</th>' +
                 '<th>Email</th>' +
+                '<th>Grade</th>' +
                 '<th>Date of Birth</th>' +
                 '<th>Requested</th>' +
                 '<th>Actions</th>' +
@@ -1693,77 +2829,88 @@
         }
 
         function renderReportsView() {
-            const activeUsers = database.users.filter(function(u) {
-                return u.status === "active";
-            }).length;
-            const students = database.users.filter(function(u) {
-                return u.role === "student";
-            }).length;
-            const admins = database.users.filter(function(u) {
-                return u.role === "admin";
-            }).length;
+            const activeUsers = database.users.filter(u => u.status === "active").length;
+            const students = database.users.filter(u => u.role === "student").length;
+            const teachers = database.teachers.length;
+            const totalMaterials = database.learningMaterials.length;
+            
+            // Calculate average scores
+            let totalMath = 0, totalEnglish = 0, totalScience = 0;
+            database.users.forEach(user => {
+                totalMath += user.progress?.mathematics?.averageScore || 0;
+                totalEnglish += user.progress?.english?.averageScore || 0;
+                totalScience += user.progress?.science?.averageScore || 0;
+            });
+            
+            const avgMath = students > 0 ? (totalMath / students).toFixed(1) : 0;
+            const avgEnglish = students > 0 ? (totalEnglish / students).toFixed(1) : 0;
+            const avgScience = students > 0 ? (totalScience / students).toFixed(1) : 0;
             
             return '<div class="content-header">' +
                 '<h2>Reports & Analytics</h2>' +
-                '<p>System statistics and user analytics</p>' +
+                '<p>System statistics and performance analytics</p>' +
                 '</div>' +
-                '<div class="reports-grid">' +
-                '<div class="report-card">' +
-                '<h3><i class="fas fa-chart-pie"></i> User Distribution</h3>' +
-                '<div class="chart-container">' +
-                '<div style="display: flex; flex-direction: column; justify-content: center; height: 100%; padding: 20px;">' +
-                '<div style="display: flex; align-items: center; margin-bottom: 15px;">' +
-                '<div style="width: 20px; height: 20px; background: #2ec4b6; border-radius: 4px; margin-right: 10px;"></div>' +
-                '<div style="flex: 1;">Students: ' + students + '</div>' +
+                '<div class="stats-grid">' +
+                '<div class="stat-card">' +
+                '<h3>Total Students</h3>' +
+                '<div class="stat-value">' + students + '</div>' +
+                '<p>Active: ' + activeUsers + '</p>' +
                 '</div>' +
-                '<div style="display: flex; align-items: center;">' +
-                '<div style="width: 20px; height: 20px; background: #4361ee; border-radius: 4px; margin-right: 10px;"></div>' +
-                '<div style="flex: 1;">Admins: ' + admins + '</div>' +
+                '<div class="stat-card">' +
+                '<h3>Total Teachers</h3>' +
+                '<div class="stat-value">' + teachers + '</div>' +
+                '<p>Teaching staff</p>' +
                 '</div>' +
+                '<div class="stat-card">' +
+                '<h3>Learning Materials</h3>' +
+                '<div class="stat-value">' + totalMaterials + '</div>' +
+                '<p>Uploaded resources</p>' +
                 '</div>' +
-                '</div>' +
-                '<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">' +
-                '<div style="text-align: center; padding: 15px; background: rgba(67, 97, 238, 0.1); border-radius: 12px;">' +
-                '<div style="font-size: 24px; font-weight: 700; color: #4361ee;">' + students + '</div>' +
-                '<div style="font-size: 14px; color: var(--gray);">Students</div>' +
-                '</div>' +
-                '<div style="text-align: center; padding: 15px; background: rgba(6, 214, 160, 0.1); border-radius: 12px;">' +
-                '<div style="font-size: 24px; font-weight: 700; color: #06d6a0;">' + admins + '</div>' +
-                '<div style="font-size: 14px; color: var(--gray);">Admins</div>' +
+                '<div class="stat-card">' +
+                '<h3>System Status</h3>' +
+                '<div class="stat-value">100%</div>' +
+                '<p>All systems operational</p>' +
                 '</div>' +
                 '</div>' +
+                '<div style="margin-top: 30px;">' +
+                '<h3 style="margin-bottom: 20px; color: var(--dark);">Subject Performance</h3>' +
+                '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">' +
+                '<div style="background: white; padding: 20px; border-radius: 12px; box-shadow: var(--card-shadow);">' +
+                '<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">' +
+                '<div style="width: 50px; height: 50px; background: #4361ee; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white;">' +
+                '<i class="fas fa-calculator"></i>' +
                 '</div>' +
-                '<div class="report-card">' +
-                '<h3><i class="fas fa-chart-line"></i> User Activity</h3>' +
-                '<div class="chart-container">' +
-                '<div style="display: flex; align-items: flex-end; height: 100%; gap: 10px; padding: 20px;">' +
-                '<div style="flex: 1; background: #ff9f1c; height: ' + (students * 10) + 'px; border-radius: 4px;"></div>' +
-                '<div style="flex: 1; background: #4361ee; height: ' + (admins * 20) + 'px; border-radius: 4px;"></div>' +
-                '<div style="flex: 1; background: #2ec4b6; height: ' + (activeUsers * 15) + 'px; border-radius: 4px;"></div>' +
-                '</div>' +
-                '</div>' +
-                '<div style="text-align: center; padding: 15px; background: rgba(255, 159, 28, 0.1); border-radius: 12px; margin-top: 15px;">' +
-                '<div style="font-size: 24px; font-weight: 700; color: #ff9f1c;">' + activeUsers + '</div>' +
-                '<div style="font-size: 14px; color: var(--gray);">Active Users</div>' +
+                '<div>' +
+                '<h4 style="color: var(--dark);">Mathematics</h4>' +
+                '<p style="color: var(--gray);">Average Score</p>' +
                 '</div>' +
                 '</div>' +
-                '<div class="report-card">' +
-                '<h3><i class="fas fa-calendar-alt"></i> Monthly Report</h3>' +
-                '<div style="margin: 20px 0;">';
-            
-            database.users.slice(0, 5).forEach(function(user) {
-                reportCardHTML += '<div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #f1f3f5;">' +
-                    '<div>' +
-                    '<div style="font-weight: 600; color: var(--dark);">' + user.name + '</div>' +
-                    '<div style="font-size: 12px; color: var(--gray);">' + user.role + '</div>' +
-                    '</div>' +
-                    '<div style="font-size: 14px; color: var(--gray);">' +
-                    'Joined ' + new Date(user.joinDate).toLocaleDateString() +
-                    '</div>' +
-                    '</div>';
-            });
-            
-            reportCardHTML += '</div>' +
+                '<div class="score-display" style="font-size: 36px;">' + avgMath + '%</div>' +
+                '</div>' +
+                '<div style="background: white; padding: 20px; border-radius: 12px; box-shadow: var(--card-shadow);">' +
+                '<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">' +
+                '<div style="width: 50px; height: 50px; background: #2ec4b6; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white;">' +
+                '<i class="fas fa-book"></i>' +
+                '</div>' +
+                '<div>' +
+                '<h4 style="color: var(--dark);">English</h4>' +
+                '<p style="color: var(--gray);">Average Score</p>' +
+                '</div>' +
+                '</div>' +
+                '<div class="score-display" style="font-size: 36px;">' + avgEnglish + '%</div>' +
+                '</div>' +
+                '<div style="background: white; padding: 20px; border-radius: 12px; box-shadow: var(--card-shadow);">' +
+                '<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">' +
+                '<div style="width: 50px; height: 50px; background: #ff9f1c; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white;">' +
+                '<i class="fas fa-flask"></i>' +
+                '</div>' +
+                '<div>' +
+                '<h4 style="color: var(--dark);">Science</h4>' +
+                '<p style="color: var(--gray);">Average Score</p>' +
+                '</div>' +
+                '</div>' +
+                '<div class="score-display" style="font-size: 36px;">' + avgScience + '%</div>' +
+                '</div>' +
                 '</div>' +
                 '</div>' +
                 '<div style="margin-top: 30px;">' +
@@ -1771,21 +2918,21 @@
                 '<i class="fas fa-download"></i> Download Full Report' +
                 '</button>' +
                 '</div>';
-            
-            return reportCardHTML;
         }
 
         function renderSettingsView() {
             if (currentUser.role === "admin") {
                 return renderAdminSettings();
+            } else if (currentUser.role === "teacher") {
+                return renderTeacherSettings();
             }
-            return renderUserSettings();
+            return renderStudentSettings();
         }
 
         function renderAdminSettings() {
             return '<div class="content-header">' +
                 '<h2>System Settings</h2>' +
-                '<p>Manage system configuration and user profiles</p>' +
+                '<p>Manage system configuration</p>' +
                 '</div>' +
                 '<div class="settings-grid">' +
                 '<div class="settings-card">' +
@@ -1840,14 +2987,22 @@
                 '<div class="settings-card">' +
                 '<h3><i class="fas fa-cog"></i> System Configuration</h3>' +
                 '<div class="form-group">' +
-                '<label style="display: flex; justify-content: space-between; align-items: center;">' +
-                '<span>Require Approval for Registration</span>' +
-                '<input type="checkbox" id="approvalRequired" ' + (database.settings.approvalRequired ? "checked" : "") + ' onchange="toggleApprovalRequired()">' +
-                '</label>' +
+                '<label>School Name</label>' +
+                '<input type="text" class="form-control" id="schoolName" value="' + database.settings.schoolName + '" onchange="updateSchoolName()">' +
+                '</div>' +
+                '<div class="form-group">' +
+                '<label>Principal Name</label>' +
+                '<input type="text" class="form-control" id="principalName" value="' + database.settings.principalName + '" onchange="updatePrincipalName()">' +
                 '</div>' +
                 '<div class="form-group">' +
                 '<label>Academic Year</label>' +
                 '<input type="text" class="form-control" id="academicYear" value="' + database.settings.academicYear + '" onchange="updateAcademicYear()">' +
+                '</div>' +
+                '<div class="form-group">' +
+                '<label style="display: flex; justify-content: space-between; align-items: center;">' +
+                '<span>Require Approval for Registration</span>' +
+                '<input type="checkbox" id="approvalRequired" ' + (database.settings.approvalRequired ? "checked" : "") + ' onchange="toggleApprovalRequired()">' +
+                '</label>' +
                 '</div>' +
                 '<div class="form-group">' +
                 '<label>App Version</label>' +
@@ -1860,223 +3015,459 @@
                 '</div>';
         }
 
-        function renderUserSettings() {
+        // STUDENT LEARNING FUNCTIONS
+        function startSubjectLesson(subjectName) {
+            selectedSubject = database.subjects.grade1.find(s => s.name.toLowerCase() === subjectName);
+            if (!selectedSubject) return;
+            
+            // Find next incomplete lesson
+            selectedLesson = selectedSubject.lessons.find(lesson => !lesson.completed) || selectedSubject.lessons[0];
+            activeView = "lesson";
+            renderDashboard();
+        }
+
+        function renderLessonView() {
+            if (!selectedSubject || !selectedLesson) {
+                setActiveView("subjects");
+                return;
+            }
+            
+            let contentHTML = '<div class="content-header">' +
+                '<div style="display: flex; justify-content: space-between; align-items: start;">' +
+                '<div>' +
+                '<h2>' + selectedSubject.name + '</h2>' +
+                '<p>' + selectedLesson.title + '</p>' +
+                '</div>' +
+                '<button class="btn btn-secondary" onclick="setActiveView(\'subjects\')" style="width: auto;">' +
+                '<i class="fas fa-arrow-left"></i> Back to Subjects' +
+                '</button>' +
+                '</div>' +
+                '</div>' +
+                '<div class="learning-content">' +
+                '<div class="content-tabs">' +
+                '<button class="content-tab active">Lesson Content</button>' +
+                '<button class="content-tab" onclick="startQuiz()">Take Quiz</button>' +
+                '</div>' +
+                '<h3 style="margin-bottom: 20px; color: var(--dark);">' + selectedLesson.title + '</h3>' +
+                '<div style="margin-bottom: 20px; padding: 20px; background: #f8fafc; border-radius: 12px;">' +
+                '<p style="color: var(--gray); line-height: 1.6;">' + (selectedLesson.content || 'Learn about ' + selectedLesson.title) + '</p>' +
+                '</div>';
+            
+            if (selectedLesson.type === "video") {
+                contentHTML += '<div style="text-align: center; margin: 30px 0;">' +
+                    '<div style="width: 100%; max-width: 600px; height: 300px; background: var(--dark); border-radius: 12px; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white;">' +
+                    '<i class="fas fa-play-circle" style="font-size: 48px;"></i>' +
+                    '</div>' +
+                    '<p style="color: var(--gray); margin-top: 15px;">Video lesson: ' + selectedLesson.duration + '</p>' +
+                    '</div>';
+            } else if (selectedLesson.type === "interactive") {
+                contentHTML += '<div style="text-align: center; margin: 30px 0;">' +
+                    '<div style="padding: 30px; background: white; border-radius: 12px; box-shadow: var(--card-shadow);">' +
+                    '<i class="fas fa-gamepad" style="font-size: 48px; color: var(--primary); margin-bottom: 20px;"></i>' +
+                    '<h4 style="margin-bottom: 10px; color: var(--dark);">Interactive Exercise</h4>' +
+                    '<p style="color: var(--gray); margin-bottom: 20px;">Complete the interactive activity below</p>' +
+                    '<button class="btn" onclick="completeInteractive()">' +
+                    '<i class="fas fa-play"></i> Start Activity' +
+                    '</button>' +
+                    '</div>' +
+                    '</div>';
+            }
+            
+            contentHTML += '<div style="display: flex; justify-content: space-between; margin-top: 30px;">' +
+                '<button class="btn btn-secondary" onclick="setActiveView(\'subjects\')" style="width: auto;">' +
+                '<i class="fas fa-save"></i> Save Progress' +
+                '</button>' +
+                '<button class="btn btn-success" onclick="completeLesson()" style="width: auto;">' +
+                '<i class="fas fa-check"></i> Mark as Complete' +
+                '</button>' +
+                '</div>' +
+                '</div>';
+            
+            return contentHTML;
+        }
+
+        function renderQuizView() {
+            if (!selectedSubject || !selectedLesson || !selectedLesson.quiz) {
+                setActiveView("lesson");
+                return;
+            }
+            
+            const quiz = selectedLesson.quiz;
+            if (currentQuizQuestion >= quiz.length) {
+                return showQuizResults();
+            }
+            
+            const currentQ = quiz[currentQuizQuestion];
+            
+            let optionsHTML = '';
+            currentQ.options.forEach((option, index) => {
+                optionsHTML += '<div class="quiz-option" onclick="selectQuizOption(' + index + ')">' +
+                    option +
+                    '</div>';
+            });
+            
             return '<div class="content-header">' +
-                '<h2>My Profile</h2>' +
-                '<p>Manage your personal information and settings</p>' +
+                '<h2>' + selectedSubject.name + ' Quiz</h2>' +
+                '<p>Question ' + (currentQuizQuestion + 1) + ' of ' + quiz.length + '</p>' +
                 '</div>' +
-                '<div class="settings-grid">' +
-                '<div class="settings-card">' +
-                '<h3><i class="fas fa-user-cog"></i> Profile Settings</h3>' +
-                '<div class="profile-picture-container">' +
-                '<div class="profile-picture" onclick="handleProfilePictureClick()">' +
-                '<div style="width: 100%; height: 100%; ' + (currentUser.profilePic ? 'background-image: url(\'' + currentUser.profilePic + '\'); background-size: cover;' : 'background: linear-gradient(135deg, #2ec4b6, #25b0a4); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px; font-weight: bold;') + '">' +
-                (currentUser.profilePic ? '' : currentUser.name.charAt(0).toUpperCase()) +
+                '<div class="quiz-container">' +
+                '<div class="quiz-question">' + currentQ.question + '</div>' +
+                '<div class="quiz-options" id="quizOptions">' +
+                optionsHTML +
                 '</div>' +
-                '<div class="profile-picture-overlay">' +
-                '<i class="fas fa-camera"></i>' +
-                '</div>' +
-                '</div>' +
-                '<button class="btn" onclick="handleProfilePictureClick()" style="width: auto; padding: 10px 20px;">' +
-                '<i class="fas fa-camera"></i> Change Profile Picture' +
+                '<div style="display: flex; justify-content: space-between; margin-top: 30px;">' +
+                '<button class="btn btn-secondary" onclick="setActiveView(\'lesson\')" style="width: auto;">' +
+                '<i class="fas fa-arrow-left"></i> Back to Lesson' +
                 '</button>' +
-                '</div>' +
-                '<form onsubmit="updateProfile(event)">' +
-                '<div class="form-group">' +
-                '<label>Full Name</label>' +
-                '<input type="text" class="form-control" id="profileName" value="' + currentUser.name + '" required>' +
-                '</div>' +
-                '<div class="form-group">' +
-                '<label>Email Address</label>' +
-                '<input type="email" class="form-control" id="profileEmail" value="' + currentUser.email + '" required>' +
-                '</div>' +
-                '<button type="submit" class="btn">' +
-                '<i class="fas fa-save"></i> Save Changes' +
+                '<button class="btn" onclick="submitQuizAnswer()" style="width: auto;" id="submitBtn">' +
+                '<i class="fas fa-paper-plane"></i> Submit Answer' +
                 '</button>' +
-                '</form>' +
-                '</div>' +
-                '<div class="settings-card">' +
-                '<h3><i class="fas fa-lock"></i> Security Settings</h3>' +
-                '<form onsubmit="changePassword(event)">' +
-                '<div class="form-group">' +
-                '<label>Current Password</label>' +
-                '<input type="password" class="form-control" id="currentPassword" required>' +
-                '</div>' +
-                '<div class="form-group">' +
-                '<label>New Password</label>' +
-                '<input type="password" class="form-control" id="newPassword" required minlength="6">' +
-                '</div>' +
-                '<div class="form-group">' +
-                '<label>Confirm New Password</label>' +
-                '<input type="password" class="form-control" id="confirmNewPassword" required>' +
-                '</div>' +
-                '<button type="submit" class="btn">' +
-                '<i class="fas fa-key"></i> Change Password' +
-                '</button>' +
-                '</form>' +
                 '</div>' +
                 '</div>';
         }
 
-        function renderModals() {
-            let modalHTML = "";
-            
-            if (currentModal === "update") {
-                modalHTML = '<div class="modal-overlay" onclick="closeModal()">' +
-                    '<div class="modal" onclick="event.stopPropagation()">' +
-                    '<div class="modal-header">' +
-                    '<h2>🎉 New Update Available!</h2>' +
-                    '<button class="close-btn" onclick="closeModal()">×</button>' +
-                    '</div>' +
-                    '<div style="padding: 20px 0;">' +
-                    '<h3 style="margin-bottom: 15px; color: var(--dark);">Version ' + database.settings.latestVersion + '</h3>' +
-                    '<div style="background: #f8fafc; padding: 20px; border-radius: 12px; margin-bottom: 20px;">' +
-                    '<h4 style="margin-bottom: 10px; color: var(--dark);">What\'s New:</h4>' +
-                    '<ul style="padding-left: 20px; color: var(--gray); line-height: 1.6;">' +
-                    '<li>Enhanced user management system</li>' +
-                    '<li>New reporting and analytics dashboard</li>' +
-                    '<li>Profile picture support</li>' +
-                    '<li>Improved mobile responsiveness</li>' +
-                    '<li>Bug fixes and performance improvements</li>' +
-                    '</ul>' +
-                    '</div>' +
-                    '<p style="color: var(--gray); margin-bottom: 20px;">This update will be applied automatically. No action required.</p>' +
-                    '<button class="btn" onclick="applyUpdate()">' +
-                    '<i class="fas fa-sync-alt"></i> Apply Update Now' +
-                    '</button>' +
-                    '</div>' +
-                    '</div>' +
-                    '</div>';
-            }
-            
-            if (currentModal === "editUser" && editingUser) {
-                modalHTML = '<div class="modal-overlay" onclick="closeModal()">' +
-                    '<div class="modal" onclick="event.stopPropagation()">' +
-                    '<div class="modal-header">' +
-                    '<h2>Edit User: ' + editingUser.name + '</h2>' +
-                    '<button class="close-btn" onclick="closeModal()">×</button>' +
-                    '</div>' +
-                    '<form onsubmit="saveUserChanges(event)" id="editUserForm">' +
-                    '<div class="form-group">' +
-                    '<label>Full Name</label>' +
-                    '<input type="text" class="form-control" id="editUserName" value="' + editingUser.name + '" required>' +
-                    '</div>' +
-                    '<div class="form-group">' +
-                    '<label>Email Address</label>' +
-                    '<input type="email" class="form-control" id="editUserEmail" value="' + editingUser.email + '" required>' +
-                    '</div>' +
-                    '<div class="form-group">' +
-                    '<label>Role</label>' +
-                    '<select class="form-control" id="editUserRole" required>' +
-                    '<option value="student" ' + (editingUser.role === "student" ? "selected" : "") + '>Student</option>' +
-                    '<option value="admin" ' + (editingUser.role === "admin" ? "selected" : "") + '>Admin</option>' +
-                    '</select>' +
-                    '</div>' +
-                    '<div class="form-group">' +
-                    '<label>Status</label>' +
-                    '<select class="form-control" id="editUserStatus" required>' +
-                    '<option value="active" ' + (editingUser.status === "active" ? "selected" : "") + '>Active</option>' +
-                    '<option value="inactive" ' + (editingUser.status === "inactive" ? "selected" : "") + '>Inactive</option>' +
-                    '<option value="suspended" ' + (editingUser.status === "suspended" ? "selected" : "") + '>Suspended</option>' +
-                    '</select>' +
-                    '</div>' +
-                    '<div style="display: flex; gap: 15px; margin-top: 30px;">' +
-                    '<button type="submit" class="btn" style="flex: 2;">' +
-                    '<i class="fas fa-save"></i> Save Changes' +
-                    '</button>' +
-                    '<button type="button" class="btn btn-danger" onclick="deleteUser(\'' + editingUser.serialNo + '\')" style="flex: 1;">' +
-                    '<i class="fas fa-trash"></i> Delete' +
-                    '</button>' +
-                    '</div>' +
-                    '</form>' +
-                    '</div>' +
-                    '</div>';
-            }
-            
-            if (currentModal === "viewUser" && editingUser) {
-                let avatarStyle = '';
-                if (editingUser.profilePic) {
-                    avatarStyle = "background-image: url('" + editingUser.profilePic + "'); background-size: cover;";
-                } else {
-                    if (editingUser.role === "admin") {
-                        avatarStyle = "background: linear-gradient(135deg, #4361ee, #3a56d4);";
-                    } else {
-                        avatarStyle = "background: linear-gradient(135deg, #2ec4b6, #25b0a4);";
-                    }
-                    avatarStyle += "display: flex; align-items: center; justify-content: center; color: white; font-size: 36px; font-weight: bold;";
-                }
-                
-                modalHTML = '<div class="modal-overlay" onclick="closeModal()">' +
-                    '<div class="modal" onclick="event.stopPropagation()">' +
-                    '<div class="modal-header">' +
-                    '<h2>User Details</h2>' +
-                    '<button class="close-btn" onclick="closeModal()">×</button>' +
-                    '</div>' +
-                    '<div style="text-align: center; margin-bottom: 30px;">' +
-                    '<div style="width: 100px; height: 100px; margin: 0 auto 20px; border-radius: 50%; ' + avatarStyle + '">' +
-                    (editingUser.profilePic ? "" : editingUser.name.charAt(0).toUpperCase()) +
-                    '</div>' +
-                    '<h3 style="margin-bottom: 5px; color: var(--dark);">' + editingUser.name + '</h3>' +
-                    '<p style="color: var(--gray);">' + editingUser.serialNo + '</p>' +
-                    '</div>' +
-                    '<div style="background: #f8fafc; padding: 20px; border-radius: 12px; margin-bottom: 20px;">' +
-                    '<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">' +
-                    '<div>' +
-                    '<div style="font-size: 12px; color: var(--gray);">Email</div>' +
-                    '<div style="font-weight: 600; color: var(--dark);">' + editingUser.email + '</div>' +
-                    '</div>' +
-                    '<div>' +
-                    '<div style="font-size: 12px; color: var(--gray);">Role</div>' +
-                    '<div style="font-weight: 600; color: var(--dark);">' + editingUser.role.toUpperCase() + '</div>' +
-                    '</div>' +
-                    '<div>' +
-                    '<div style="font-size: 12px; color: var(--gray);">Status</div>' +
-                    '<div><span style="padding: 4px 12px; background: rgba(6, 214, 160, 0.1); color: #06d6a0; border-radius: 20px; font-size: 12px;">' + editingUser.status.toUpperCase() + '</span></div>' +
-                    '</div>' +
-                    '<div>' +
-                    '<div style="font-size: 12px; color: var(--gray);">Join Date</div>' +
-                    '<div style="font-weight: 600; color: var(--dark);">' + new Date(editingUser.joinDate).toLocaleDateString() + '</div>' +
-                    '</div>' +
-                    '</div>' +
-                    '</div>' +
-                    '<button class="btn" onclick="editUser(\'' + editingUser.serialNo + '\')">' +
-                    '<i class="fas fa-edit"></i> Edit User' +
-                    '</button>' +
-                    '</div>' +
-                    '</div>';
-            }
-            
-            return modalHTML;
+        function selectQuizOption(index) {
+            const options = document.querySelectorAll('.quiz-option');
+            options.forEach(option => option.classList.remove('selected'));
+            options[index].classList.add('selected');
+            document.getElementById('submitBtn').disabled = false;
         }
 
-        // Admin Functions
-        function approveUser(userId) {
-            const userIndex = database.pendingApprovals.findIndex(function(u) {
-                return u.id === userId;
+        function submitQuizAnswer() {
+            const selected = document.querySelector('.quiz-option.selected');
+            if (!selected) return;
+            
+            const selectedIndex = Array.from(document.querySelectorAll('.quiz-option')).indexOf(selected);
+            const correctIndex = selectedLesson.quiz[currentQuizQuestion].answer;
+            
+            const options = document.querySelectorAll('.quiz-option');
+            options.forEach((option, index) => {
+                if (index === correctIndex) {
+                    option.classList.add('correct');
+                } else if (index === selectedIndex && index !== correctIndex) {
+                    option.classList.add('incorrect');
+                }
             });
             
+            if (selectedIndex === correctIndex) {
+                quizScore++;
+                showToast("Correct answer!", "success");
+            } else {
+                showToast("Incorrect answer", "error");
+            }
+            
+            setTimeout(() => {
+                currentQuizQuestion++;
+                if (currentQuizQuestion < selectedLesson.quiz.length) {
+                    renderDashboard();
+                } else {
+                    showQuizResults();
+                }
+            }, 1500);
+        }
+
+        function showQuizResults() {
+            const totalQuestions = selectedLesson.quiz.length;
+            const scorePercentage = Math.round((quizScore / totalQuestions) * 100);
+            
+            // Update student progress
+            const subjectKey = selectedSubject.name.toLowerCase();
+            if (!currentUser.progress[subjectKey]) {
+                currentUser.progress[subjectKey] = { 
+                    overall: 0, 
+                    lessonsCompleted: 0, 
+                    totalLessons: 5,
+                    scores: [],
+                    lastTestScore: 0,
+                    averageScore: 0
+                };
+            }
+            
+            // Add score
+            currentUser.progress[subjectKey].scores.push(scorePercentage);
+            currentUser.progress[subjectKey].lastTestScore = scorePercentage;
+            
+            // Calculate average
+            const scores = currentUser.progress[subjectKey].scores;
+            const average = scores.reduce((a, b) => a + b, 0) / scores.length;
+            currentUser.progress[subjectKey].averageScore = average;
+            
+            // Update overall progress
+            const completedLessons = selectedSubject.lessons.filter(l => l.completed).length + 1;
+            currentUser.progress[subjectKey].lessonsCompleted = completedLessons;
+            currentUser.progress[subjectKey].overall = Math.round((completedLessons / selectedSubject.lessons.length) * 100);
+            
+            // Save changes
+            localStorage.setItem('edunova_user', JSON.stringify(currentUser));
+            saveDatabase();
+            
+            activeView = "quiz";
+            renderDashboard();
+            
+            return '<div class="content-header">' +
+                '<h2>Quiz Completed!</h2>' +
+                '<p>Great job completing the quiz</p>' +
+                '</div>' +
+                '<div class="quiz-container" style="text-align: center;">' +
+                '<div class="score-display">' + scorePercentage + '%</div>' +
+                '<p style="color: var(--gray); margin-bottom: 20px;">You scored ' + quizScore + ' out of ' + totalQuestions + ' questions correctly</p>' +
+                '<div style="display: flex; justify-content: center; gap: 15px; margin-top: 30px;">' +
+                '<button class="btn btn-success" onclick="completeLesson()" style="width: auto;">' +
+                '<i class="fas fa-check-circle"></i> Complete Lesson' +
+                '</button>' +
+                '<button class="btn" onclick="retryQuiz()" style="width: auto;">' +
+                '<i class="fas fa-redo"></i> Try Again' +
+                '</button>' +
+                '</div>' +
+                '</div>';
+        }
+
+        function completeLesson() {
+            if (selectedLesson) {
+                selectedLesson.completed = true;
+                
+                // Update in database
+                const subjectIndex = database.subjects.grade1.findIndex(s => s.name === selectedSubject.name);
+                if (subjectIndex !== -1) {
+                    const lessonIndex = database.subjects.grade1[subjectIndex].lessons.findIndex(l => l.id === selectedLesson.id);
+                    if (lessonIndex !== -1) {
+                        database.subjects.grade1[subjectIndex].lessons[lessonIndex].completed = true;
+                    }
+                }
+                
+                saveDatabase();
+                showToast("Lesson marked as complete!", "success");
+            }
+            
+            // Reset quiz state
+            currentQuizQuestion = 0;
+            quizScore = 0;
+            selectedLesson = null;
+            selectedSubject = null;
+            
+            setActiveView("subjects");
+        }
+
+        function completeInteractive() {
+            showToast("Interactive activity completed!", "success");
+            document.querySelector('.btn-success').disabled = false;
+        }
+
+        function startQuiz() {
+            if (!selectedLesson.quiz || selectedLesson.quiz.length === 0) {
+                showToast("No quiz available for this lesson", "info");
+                return;
+            }
+            
+            currentQuizQuestion = 0;
+            quizScore = 0;
+            activeView = "quiz";
+            renderDashboard();
+        }
+
+        function retryQuiz() {
+            currentQuizQuestion = 0;
+            quizScore = 0;
+            activeView = "quiz";
+            renderDashboard();
+        }
+
+        // TEACHER FUNCTIONS
+        function teachSubject(subjectName) {
+            selectedSubject = database.subjects.grade1.find(s => s.name === subjectName);
+            if (!selectedSubject) return;
+            
+            return '<div class="content-header">' +
+                '<h2>Teaching: ' + selectedSubject.name + '</h2>' +
+                '<p>Manage lessons and student progress</p>' +
+                '</div>' +
+                '<div class="learning-content">' +
+                '<h3 style="margin-bottom: 20px; color: var(--dark);">Lesson Plans</h3>' +
+                '<div class="lesson-list">';
+            
+            selectedSubject.lessons.forEach(lesson => {
+                const students = database.users.filter(u => u.grade === "Grade 1");
+                const completedStudents = students.filter(s => {
+                    const progress = s.progress?.[selectedSubject.name.toLowerCase()];
+                    return progress && progress.lessonsCompleted >= lesson.id;
+                }).length;
+                const completionRate = students.length > 0 ? Math.round((completedStudents / students.length) * 100) : 0;
+                
+                lessonHTML += '<div class="lesson-item">' +
+                    '<div style="flex: 1;">' +
+                    '<div style="display: flex; align-items: center; gap: 10px;">' +
+                    '<i class="fas ' + (lesson.completed ? 'fa-check-circle lesson-completed' : 'fa-circle lesson-pending') + '"></i>' +
+                    '<div>' +
+                    '<div style="font-weight: 500; color: var(--dark);">' + lesson.title + '</div>' +
+                    '<div style="font-size: 12px; color: var(--gray);">' + lesson.duration + ' • ' + lesson.type + '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div style="display: flex; align-items: center; gap: 15px;">' +
+                    '<div style="text-align: center;">' +
+                    '<div style="font-weight: bold; color: var(--dark);">' + completionRate + '%</div>' +
+                    '<div style="font-size: 12px; color: var(--gray);">Complete</div>' +
+                    '</div>' +
+                    '<button class="action-btn edit" onclick="editLesson(' + lesson.id + ')">' +
+                    '<i class="fas fa-edit"></i> Edit' +
+                    '</button>' +
+                    '</div>' +
+                    '</div>';
+            });
+            
+            lessonHTML += '</div>' +
+                '<div style="margin-top: 30px;">' +
+                '<button class="btn" onclick="addLesson()">' +
+                '<i class="fas fa-plus"></i> Add New Lesson' +
+                '</button>' +
+                '</div>' +
+                '</div>';
+            
+            return lessonHTML;
+        }
+
+        function updateStudentGrade(serialNo, subject, score) {
+            const student = database.users.find(u => u.serialNo === serialNo);
+            if (!student) return;
+            
+            score = parseFloat(score);
+            if (isNaN(score) || score < 0 || score > 100) {
+                showToast("Please enter a valid score between 0-100", "error");
+                return;
+            }
+            
+            if (!student.progress[subject]) {
+                student.progress[subject] = { 
+                    overall: 0, 
+                    lessonsCompleted: 0, 
+                    totalLessons: 5,
+                    scores: [],
+                    lastTestScore: 0,
+                    averageScore: 0
+                };
+            }
+            
+            // Add new score
+            student.progress[subject].scores.push(score);
+            student.progress[subject].lastTestScore = score;
+            
+            // Calculate new average
+            const scores = student.progress[subject].scores;
+            const average = scores.reduce((a, b) => a + b, 0) / scores.length;
+            student.progress[subject].averageScore = average;
+            
+            saveDatabase();
+            showToast("Grade updated successfully", "success");
+        }
+
+        function handleFileSelect(event) {
+            const files = event.target.files;
+            const fileList = document.getElementById('selectedFiles');
+            fileList.innerHTML = '';
+            
+            Array.from(files).forEach(file => {
+                uploadFiles.push(file);
+                fileList.innerHTML += '<div class="file-item">' +
+                    '<div>' +
+                    '<div style="font-weight: 500; color: var(--dark);">' + file.name + '</div>' +
+                    '<div style="font-size: 12px; color: var(--gray);">' + (file.size / 1024 / 1024).toFixed(2) + ' MB</div>' +
+                    '</div>' +
+                    '<button class="action-btn delete" onclick="removeFile(\'' + file.name + '\')">' +
+                    '<i class="fas fa-times"></i>' +
+                    '</button>' +
+                    '</div>';
+            });
+        }
+
+        function removeFile(fileName) {
+            uploadFiles = uploadFiles.filter(f => f.name !== fileName);
+            const fileList = document.getElementById('selectedFiles');
+            fileList.innerHTML = '';
+            
+            uploadFiles.forEach(file => {
+                fileList.innerHTML += '<div class="file-item">' +
+                    '<div>' +
+                    '<div style="font-weight: 500; color: var(--dark);">' + file.name + '</div>' +
+                    '<div style="font-size: 12px; color: var(--gray);">' + (file.size / 1024 / 1024).toFixed(2) + ' MB</div>' +
+                    '</div>' +
+                    '<button class="action-btn delete" onclick="removeFile(\'' + file.name + '\')">' +
+                    '<i class="fas fa-times"></i>' +
+                    '</button>' +
+                    '</div>';
+            });
+        }
+
+        function handleUpload(event) {
+            event.preventDefault();
+            
+            if (uploadFiles.length === 0) {
+                showToast("Please select a file to upload", "error");
+                return;
+            }
+            
+            const title = document.getElementById('materialTitle').value;
+            const subject = document.getElementById('materialSubject').value;
+            const grade = document.getElementById('materialGrade').value;
+            const type = document.getElementById('materialType').value;
+            
+            const newMaterial = {
+                id: database.learningMaterials.length + 1,
+                title: title,
+                subject: subject,
+                grade: grade,
+                type: type,
+                uploadDate: new Date().toISOString().split('T')[0],
+                uploadedBy: currentUser.name,
+                fileSize: (uploadFiles[0].size / 1024 / 1024).toFixed(1) + ' MB',
+                downloads: 0
+            };
+            
+            database.learningMaterials.push(newMaterial);
+            saveDatabase();
+            
+            showToast("Material uploaded successfully!", "success");
+            uploadFiles = [];
+            document.getElementById('selectedFiles').innerHTML = '';
+            event.target.reset();
+        }
+
+        function downloadMaterial(id) {
+            const material = database.learningMaterials.find(m => m.id === id);
+            if (!material) return;
+            
+            material.downloads++;
+            saveDatabase();
+            
+            // Create a dummy download link
+            const link = document.createElement('a');
+            link.href = '#';
+            link.download = material.title + '.' + material.type;
+            link.click();
+            
+            showToast("Download started: " + material.title, "success");
+        }
+
+        // ADMIN FUNCTIONS
+        function approveUser(userId) {
+            const userIndex = database.pendingApprovals.findIndex(u => u.id === userId);
             if (userIndex === -1) return;
 
             const user = database.pendingApprovals[userIndex];
-            user.serialNo = generateSerialNo();
+            user.serialNo = generateStudentSerialNo();
             user.status = "active";
             user.joinDate = new Date().toISOString();
-            user.grade = "Grade 1";
-            user.progress = {};
+            user.createdBy = currentUser.name;
 
             database.users.push(user);
             database.pendingApprovals.splice(userIndex, 1);
             saveDatabase();
 
-            showToast("Approved " + user.name + ". Serial: " + user.serialNo, "success");
+            showToast("Approved " + user.name + ". Serial: " + user.serialNo + ". Password: " + user.password, "success");
             renderDashboard();
         }
 
         function rejectUser(userId) {
-            const userIndex = database.pendingApprovals.findIndex(function(u) {
-                return u.id === userId;
-            });
-            
+            const userIndex = database.pendingApprovals.findIndex(u => u.id === userId);
             if (userIndex === -1) return;
 
             database.pendingApprovals.splice(userIndex, 1);
@@ -2086,23 +3477,105 @@
             renderDashboard();
         }
 
-        function viewUserDetails(serialNo) {
-            const user = database.users.find(function(u) {
-                return u.serialNo === serialNo;
-            });
+        function addStudent() {
+            const name = prompt("Enter student name:");
+            if (!name) return;
             
-            if (!user) return;
+            const email = prompt("Enter student email:");
+            if (!email) return;
             
-            editingUser = user;
+            const grade = prompt("Enter grade level (Grade 1-5):", "Grade 1");
+            if (!grade) return;
+            
+            const password = prompt("Set password for student:", "student123");
+            if (!password) return;
+            
+            const newStudent = {
+                serialNo: generateStudentSerialNo(),
+                password: password,
+                name: name,
+                email: email,
+                role: "student",
+                grade: grade,
+                branch: "student",
+                joinDate: new Date().toISOString(),
+                status: "active",
+                profilePic: null,
+                progress: {
+                    mathematics: { overall: 0, lessonsCompleted: 0, totalLessons: 5, scores: [], lastTestScore: 0, averageScore: 0 },
+                    english: { overall: 0, lessonsCompleted: 0, totalLessons: 5, scores: [], lastTestScore: 0, averageScore: 0 },
+                    science: { overall: 0, lessonsCompleted: 0, totalLessons: 5, scores: [], lastTestScore: 0, averageScore: 0 }
+                },
+                attendance: 100,
+                behaviorScore: 100,
+                createdBy: currentUser.name
+            };
+            
+            database.users.push(newStudent);
+            saveDatabase();
+            
+            showToast("Student added successfully! Serial: " + newStudent.serialNo + ", Password: " + password, "success");
+            renderDashboard();
+        }
+
+        function addTeacher() {
+            const name = prompt("Enter teacher name:");
+            if (!name) return;
+            
+            const email = prompt("Enter teacher email:");
+            if (!email) return;
+            
+            const subjects = prompt("Enter subjects (comma separated):", "Mathematics, English, Science");
+            if (!subjects) return;
+            
+            const gradeLevels = prompt("Enter grade levels (comma separated):", "Grade 1, Grade 2");
+            if (!gradeLevels) return;
+            
+            const password = prompt("Set password for teacher:", "teacher123");
+            if (!password) return;
+            
+            const newTeacher = {
+                serialNo: generateTeacherSerialNo(),
+                password: password,
+                name: name,
+                email: email,
+                role: "teacher",
+                branch: "staff",
+                joinDate: new Date().toISOString(),
+                status: "active",
+                profilePic: null,
+                subjects: subjects.split(',').map(s => s.trim()),
+                gradeLevel: gradeLevels.split(',').map(g => g.trim()),
+                createdBy: currentUser.name
+            };
+            
+            database.teachers.push(newTeacher);
+            saveDatabase();
+            
+            showToast("Teacher added successfully! Serial: " + newTeacher.serialNo + ", Password: " + password, "success");
+            renderDashboard();
+        }
+
+        function viewStudentDetails(serialNo) {
+            const student = database.users.find(u => u.serialNo === serialNo);
+            if (!student) return;
+            
+            editingUser = student;
             currentModal = "viewUser";
             renderDashboard();
         }
 
-        function editUser(serialNo) {
-            const user = database.users.find(function(u) {
-                return u.serialNo === serialNo;
-            });
+        function viewTeacherDetails(serialNo) {
+            const teacher = database.teachers.find(t => t.serialNo === serialNo);
+            if (!teacher) return;
             
+            editingUser = teacher;
+            currentModal = "viewTeacher";
+            renderDashboard();
+        }
+
+        function editUser(serialNo) {
+            const user = database.users.find(u => u.serialNo === serialNo);
             if (!user) return;
             
             editingUser = user;
@@ -2110,90 +3583,52 @@
             renderDashboard();
         }
 
-        function saveUserChanges(event) {
-            event.preventDefault();
-            if (!editingUser) return;
+        function editTeacher(serialNo) {
+            const teacher = database.teachers.find(t => t.serialNo === serialNo);
+            if (!teacher) return;
             
-            const user = database.users.find(function(u) {
-                return u.serialNo === editingUser.serialNo;
-            });
-            
-            if (user) {
-                user.name = document.getElementById("editUserName").value;
-                user.email = document.getElementById("editUserEmail").value;
-                user.role = document.getElementById("editUserRole").value;
-                user.status = document.getElementById("editUserStatus").value;
-                
-                // Update current user if editing self
-                if (currentUser.serialNo === user.serialNo) {
-                    currentUser = user;
-                    localStorage.setItem('edunova_user', JSON.stringify(currentUser));
-                }
-                
-                saveDatabase();
-                showToast("User updated successfully", "success");
-                closeModal();
-                renderDashboard();
-            }
+            editingUser = teacher;
+            currentModal = "editTeacher";
+            renderDashboard();
         }
 
         function deleteUser(serialNo) {
-            if (serialNo === database.admin.serialNo) {
-                showToast("Cannot delete admin account", "error");
-                return;
-            }
-            
-            if (confirm("Are you sure you want to delete this user?")) {
-                const userIndex = database.users.findIndex(function(u) {
-                    return u.serialNo === serialNo;
-                });
-                
+            if (confirm("Are you sure you want to delete this student?")) {
+                const userIndex = database.users.findIndex(u => u.serialNo === serialNo);
                 if (userIndex !== -1) {
                     database.users.splice(userIndex, 1);
                     saveDatabase();
-                    showToast("User deleted successfully", "success");
-                    closeModal();
+                    showToast("Student deleted successfully", "success");
                     renderDashboard();
                 }
             }
         }
 
-        function createNewUser() {
-            const newUser = {
-                serialNo: generateSerialNo(),
-                password: "password123",
-                name: "New User",
-                email: "newuser@edunova.com",
-                role: "student",
-                grade: "Grade 1",
-                branch: "student",
-                joinDate: new Date().toISOString(),
-                status: "active",
-                profilePic: null,
-                progress: {}
-            };
-            
-            database.users.push(newUser);
-            saveDatabase();
-            showToast("New user created successfully", "success");
-            renderDashboard();
+        function deleteTeacher(serialNo) {
+            if (confirm("Are you sure you want to delete this teacher?")) {
+                const teacherIndex = database.teachers.findIndex(t => t.serialNo === serialNo);
+                if (teacherIndex !== -1) {
+                    database.teachers.splice(teacherIndex, 1);
+                    saveDatabase();
+                    showToast("Teacher deleted successfully", "success");
+                    renderDashboard();
+                }
+            }
         }
 
-        function exportUsers() {
-            const dataStr = JSON.stringify(database.users, null, 2);
-            const dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataStr);
-            
-            const exportFileDefaultName = "edunova-users-" + new Date().toISOString().split('T')[0] + ".json";
-            
-            const linkElement = document.createElement('a');
-            linkElement.setAttribute('href', dataUri);
-            linkElement.setAttribute('download', exportFileDefaultName);
-            linkElement.click();
-            
-            showToast("Users exported successfully", "success");
+        function deleteMaterial(id) {
+            if (confirm("Are you sure you want to delete this material?")) {
+                const materialIndex = database.learningMaterials.findIndex(m => m.id === id);
+                if (materialIndex !== -1) {
+                    database.learningMaterials.splice(materialIndex, 1);
+                    saveDatabase();
+                    showToast("Material deleted successfully", "success");
+                    renderDashboard();
+                }
+            }
         }
 
-        // Settings Functions
+        // SETTINGS FUNCTIONS
         function handleProfilePictureClick() {
             const input = document.createElement('input');
             input.type = 'file';
@@ -2205,6 +3640,18 @@
                     reader.onload = function(e) {
                         currentUser.profilePic = e.target.result;
                         localStorage.setItem('edunova_user', JSON.stringify(currentUser));
+                        
+                        // Update in database
+                        if (currentUser.role === "admin") {
+                            database.admin.profilePic = e.target.result;
+                        } else if (currentUser.role === "teacher") {
+                            const teacher = database.teachers.find(t => t.serialNo === currentUser.serialNo);
+                            if (teacher) teacher.profilePic = e.target.result;
+                        } else {
+                            const student = database.users.find(u => u.serialNo === currentUser.serialNo);
+                            if (student) student.profilePic = e.target.result;
+                        }
+                        
                         saveDatabase();
                         renderDashboard();
                         showToast("Profile picture updated", "success");
@@ -2217,9 +3664,31 @@
 
         function updateProfile(event) {
             event.preventDefault();
-            currentUser.name = document.getElementById("profileName").value;
-            currentUser.email = document.getElementById("profileEmail").value;
+            const name = document.getElementById("profileName").value;
+            const email = document.getElementById("profileEmail").value;
+            
+            currentUser.name = name;
+            currentUser.email = email;
             localStorage.setItem('edunova_user', JSON.stringify(currentUser));
+            
+            // Update in database
+            if (currentUser.role === "admin") {
+                database.admin.name = name;
+                database.admin.email = email;
+            } else if (currentUser.role === "teacher") {
+                const teacher = database.teachers.find(t => t.serialNo === currentUser.serialNo);
+                if (teacher) {
+                    teacher.name = name;
+                    teacher.email = email;
+                }
+            } else {
+                const student = database.users.find(u => u.serialNo === currentUser.serialNo);
+                if (student) {
+                    student.name = name;
+                    student.email = email;
+                }
+            }
+            
             saveDatabase();
             showToast("Profile updated successfully", "success");
             renderDashboard();
@@ -2243,6 +3712,18 @@
             
             currentUser.password = newPassword;
             localStorage.setItem('edunova_user', JSON.stringify(currentUser));
+            
+            // Update in database
+            if (currentUser.role === "admin") {
+                database.admin.password = newPassword;
+            } else if (currentUser.role === "teacher") {
+                const teacher = database.teachers.find(t => t.serialNo === currentUser.serialNo);
+                if (teacher) teacher.password = newPassword;
+            } else {
+                const student = database.users.find(u => u.serialNo === currentUser.serialNo);
+                if (student) student.password = newPassword;
+            }
+            
             saveDatabase();
             showToast("Password changed successfully", "success");
             document.getElementById("currentPassword").value = "";
@@ -2262,6 +3743,18 @@
             showToast("Academic year updated", "success");
         }
 
+        function updateSchoolName() {
+            database.settings.schoolName = document.getElementById("schoolName").value;
+            saveDatabase();
+            showToast("School name updated", "success");
+        }
+
+        function updatePrincipalName() {
+            database.settings.principalName = document.getElementById("principalName").value;
+            saveDatabase();
+            showToast("Principal name updated", "success");
+        }
+
         function resetSystem() {
             if (confirm("Are you sure you want to reset all system data? This cannot be undone.")) {
                 localStorage.clear();
@@ -2277,16 +3770,29 @@
             updateNotificationShown = false;
         }
 
-        // Reports Functions
         function generateReport() {
             const report = {
                 generated: new Date().toISOString(),
-                totalUsers: database.users.length,
-                activeUsers: database.users.filter(function(u) { return u.status === 'active'; }).length,
-                students: database.users.filter(function(u) { return u.role === 'student'; }).length,
-                admins: database.users.filter(function(u) { return u.role === 'admin'; }).length,
+                school: database.settings.schoolName,
+                academicYear: database.settings.academicYear,
+                totalStudents: database.users.length,
+                totalTeachers: database.teachers.length,
+                activeStudents: database.users.filter(u => u.status === 'active').length,
                 pendingApprovals: database.pendingApprovals.length,
-                users: database.users
+                learningMaterials: database.learningMaterials.length,
+                subjects: database.subjects.grade1.map(s => ({
+                    name: s.name,
+                    lessons: s.lessons.length,
+                    completedLessons: s.lessons.filter(l => l.completed).length
+                })),
+                students: database.users.map(u => ({
+                    name: u.name,
+                    serialNo: u.serialNo,
+                    grade: u.grade,
+                    averageScore: ((u.progress?.mathematics?.averageScore || 0) + 
+                                  (u.progress?.english?.averageScore || 0) + 
+                                  (u.progress?.science?.averageScore || 0)) / 3
+                }))
             };
             
             const dataStr = JSON.stringify(report, null, 2);
@@ -2300,12 +3806,72 @@
             showToast("Report generated successfully", "success");
         }
 
-        // Utility Functions
+        function generateReportCards() {
+            showToast("Report cards generated and ready for printing", "success");
+        }
+
+        function createAnnouncement() {
+            const title = prompt("Enter announcement title:");
+            if (!title) return;
+            
+            const content = prompt("Enter announcement content:");
+            if (!content) return;
+            
+            const newAnnouncement = {
+                id: database.announcements.length + 1,
+                title: title,
+                content: content,
+                date: new Date().toISOString().split('T')[0],
+                author: currentUser.name
+            };
+            
+            database.announcements.push(newAnnouncement);
+            saveDatabase();
+            
+            showToast("Announcement created successfully", "success");
+            renderDashboard();
+        }
+
+        function createAssignment() {
+            const title = prompt("Enter assignment title:");
+            if (!title) return;
+            
+            const subject = prompt("Enter subject:", "Mathematics");
+            if (!subject) return;
+            
+            const grade = prompt("Enter grade level:", "Grade 1");
+            if (!grade) return;
+            
+            const dueDate = prompt("Enter due date (YYYY-MM-DD):", new Date().toISOString().split('T')[0]);
+            if (!dueDate) return;
+            
+            const newAssignment = {
+                id: database.assignments.length + 1,
+                title: title,
+                subject: subject,
+                grade: grade,
+                dueDate: dueDate,
+                assignedBy: currentUser.name,
+                submissions: []
+            };
+            
+            database.assignments.push(newAssignment);
+            saveDatabase();
+            
+            showToast("Assignment created successfully", "success");
+            renderDashboard();
+        }
+
+        // UTILITY FUNCTIONS
         function setActiveView(view) {
             activeView = view;
             showSidebar = false;
             currentModal = null;
             editingUser = null;
+            selectedSubject = null;
+            selectedLesson = null;
+            currentQuizQuestion = 0;
+            quizScore = 0;
             renderDashboard();
         }
 
