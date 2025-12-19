@@ -1,1 +1,15 @@
-
+{
+  "admin": {
+    "serialNo": "ADMIN001",
+    "password": "admin123",
+    "name": "System Administrator",
+    "email": "admin@edunova.com",
+    "role": "admin"
+  },
+  "teachers": [],
+  "users": [],
+  "learningMaterials": [],
+  "assignments": [],
+  "tests": [],
+  "announcements": []
+}
