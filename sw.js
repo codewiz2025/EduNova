@@ -21,4 +21,14 @@ self.addEventListener('fetch', event => {
         return fetch(event.request);
       })
   );
+
+  
+
 });
+
+const GITHUB_CONFIG = {
+    USERNAME: 'codewiz2025',  // Change this
+    REPO: 'EduNova',         // Keep this
+    TOKEN: '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',     // Paste your token
+    USE_GITHUB_DB: true,              // Change to true
+};
